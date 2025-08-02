@@ -1,28 +1,94 @@
-name: LeetCode Stats
+name: LeetCode Stats Tracker
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 18 * * *'  # Daily at 6 PM UTC (better API reliability)
   workflow_dispatch:
 
 jobs:
-  update:
+  update-stats:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-      - name: Fetch LeetCode Data
+      - name: Fetch LeetCode Data (GraphQL)
+        id: fetch
         run: |
-          curl -X POST https://leetcode.com/graphql \
-            -H "Content-Type: application/json" \
-            -d '{"query":"query getUserProfile($username: String!) { matchedUser(username: $username) { submitStats { acSubmissionNum { difficulty count } } profile { ranking } }","variables":{"username":"ananymishradev"}}' \
-            > leetcode.json || echo '{"solved":0,"ranking":"N/A"}' > leetcode.json
+          # Primary query - gets all profile data
+          QUERY='{
+            "query":"query getUserProfile($username: String!) {
+              matchedUser(username: $username) {
+                submitStats {
+                  acSubmissionNum { difficulty count }
+                  totalSubmissionNum { count }
+                }
+                profile { ranking }
+                userContestRanking { rating attendedContestsCount topPercentage }
+                recentSubmissionList(limit: 1) { title }
+              }
+            }",
+            "variables":{"username":"ananymishradev"}
+          }'
 
-      - name: Generate SVG
+          # Try with 3 retries (LeetCode API can be flaky)
+          for i in {1..3}; do
+            curl -X POST \
+              -H "Content-Type: application/json" \
+              -H "Referer: https://leetcode.com/ananymishradev/" \
+              -d "$QUERY" \
+              https://leetcode.com/graphql > leetcode_raw.json && break
+            sleep 5
+          done
+
+          # Process data with jq
+          jq '{
+            solved: .data.matchedUser.submitStats.acSubmissionNum[0].count,
+            easy: .data.matchedUser.submitStats.acSubmissionNum[1].count,
+            medium: .data.matchedUser.submitStats.acSubmissionNum[2].count,
+            hard: .data.matchedUser.submitStats.acSubmissionNum[3].count,
+            totalSubmissions: .data.matchedUser.submitStats.totalSubmissionNum[0].count,
+            ranking: .data.matchedUser.profile.ranking,
+            contestRating: (.data.matchedUser.userContestRanking.rating | floor),
+            contestTopPercent: (.data.matchedUser.userContestRanking.topPercentage | tonumber | round * 100 | . / 100),
+            contestsAttended: .data.matchedUser.userContestRanking.attendedContestsCount,
+            lastSubmission: .data.matchedUser.recentSubmissionList[0].title,
+            acceptanceRate: (
+              (.data.matchedUser.submitStats.acSubmissionNum[0].count / .data.matchedUser.submitStats.totalSubmissionNum[0].count * 100 | round / 100)
+              // 0
+            )
+          }' leetcode_raw.json > stats.json
+
+          # Fallback if API fails
+          if [ ! -s stats.json ]; then
+            echo '{
+              "solved": 0,
+              "easy": 0,
+              "medium": 0,
+              "hard": 0,
+              "ranking": "N/A",
+              "contestRating": 0,
+              "contestTopPercent": 0,
+              "contestsAttended": 0,
+              "lastSubmission": "N/A",
+              "acceptanceRate": 0
+            }' > stats.json
+          fi
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Generate SVG Badge
         run: |
-          python scripts/generate_svg.py  # Your existing script
+          pip install python-dateutil
+          python scripts/generate_svg.py
+          
+          # Only commit if there are changes
           git config user.name "GitHub Actions"
-          git add leetcode.json stats.svg
-          git commit -m "Update stats"
+          git config user.email "actions@users.noreply.github.com"
+          git add stats.json stats.svg
+          git diff-index --quiet HEAD || git commit -m "Update LeetCode stats [skip ci]"
           git push
