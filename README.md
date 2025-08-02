@@ -1,15 +1,8 @@
 <h1 align="center">Hi, I'm Anany Mishra</h1>
 <h3 align="center">A Full Stack Developer & Competitive Programmer</h3>
-<!-- Snake Game Repo View -->
 
-<div align="center">
-  <img src="https://profile-readme-generator.com/assets/snake.svg" alt="Snake animation" />
-</div>
-
-![snake gif](https://github.com/ananymishradev/ananymishradev/blob/output/github-contribution-grid-snake.gif)
+![Leetcode Stats](https://leetcard.jacoblin.cool/ananymishradev?ext=heatmap)
   
-![LeetCode Stats](https://raw.githubusercontent.com/ananymishradev/ananymishradev/main/outputs/stats.svg)
-
 ## GitHub Stats:
 ![](https://github-readme-stats.vercel.app/api?username=ananymishradev&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
 ![](https://nirzak-streak-stats.vercel.app/?user=ananymishradev&theme=dark&hide_border=false)<br/>
