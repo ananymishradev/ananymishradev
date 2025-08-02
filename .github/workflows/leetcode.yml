@@ -1,38 +1,28 @@
-name: Update LeetCode Stats
+name: LeetCode Stats
 on:
   schedule:
-    - cron: '0 0 * * *'  # Daily update
-  workflow_dispatch:      # Manual trigger
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
-  update-stats:
+  update:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Fetch LeetCode Stats (Official API)
+      - name: Fetch LeetCode Data
         run: |
-          # Fetch using LeetCode's GraphQL API
           curl -X POST https://leetcode.com/graphql \
             -H "Content-Type: application/json" \
-            -d '{"query":"query getUserProfile($username: String!) { matchedUser(username: $username) { submitStats { acSubmissionNum { difficulty count } } profile { ranking } } }","variables":{"username":"ananymishradev"}}' \
-            > stats_raw.json
-
-          # Parse response
-          jq '{ 
-            solved: .data.matchedUser.submitStats.acSubmissionNum[0].count,
-            easySolved: .data.matchedUser.submitStats.acSubmissionNum[1].count,
-            mediumSolved: .data.matchedUser.submitStats.acSubmissionNum[2].count,
-            hardSolved: .data.matchedUser.submitStats.acSubmissionNum[3].count,
-            ranking: .data.matchedUser.profile.ranking
-          }' stats_raw.json > stats.json
+            -d '{"query":"query getUserProfile($username: String!) { matchedUser(username: $username) { submitStats { acSubmissionNum { difficulty count } } profile { ranking } }","variables":{"username":"ananymishradev"}}' \
+            > leetcode.json || echo '{"solved":0,"ranking":"N/A"}' > leetcode.json
 
       - name: Generate SVG
         run: |
-          python scripts/generate_svg.py
+          python scripts/generate_svg.py  # Your existing script
           git config user.name "GitHub Actions"
-          git config user.email "actions@users.noreply.github.com"
-          git add stats.json stats.svg
-          git commit -m "Update LeetCode stats"
+          git add leetcode.json stats.svg
+          git commit -m "Update stats"
           git push
