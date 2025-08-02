@@ -27,7 +27,7 @@ jobs:
         run: python scripts/fetch_cf_stats.py
 
       - name: Push changes
-      run: |
+        run: |
         git config --global user.name 'ananymishradev'
         git config --global user.email 'anany.mishra.real@gmail.com'
         git add output/
