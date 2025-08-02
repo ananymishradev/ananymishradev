@@ -14,7 +14,7 @@
 
 ![LeetCode Stats](https://raw.githubusercontent.com/ananymishradev/ananymishradev/main/stats.svg)
 
-[View Profile](https://leetcode.com/ananymishradev/)
+[View Full Profile](https://leetcode.com/ananymishradev/)
 
 ---
 ### Competitive Programming Stats
