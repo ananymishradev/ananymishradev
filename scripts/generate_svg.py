@@ -6,19 +6,33 @@ from pathlib import Path
 output_dir = Path("outputs")
 output_dir.mkdir(exist_ok=True)
 
-# Load stats with fallback
+# Default values for ALL possible stats
+DEFAULT_STATS = {
+    # Problem stats
+    "solved": 0, "easy": 0, "medium": 0, "hard": 0, "totalSubmissions": 0,
+    # Profile stats
+    "ranking": "N/A", "reputation": 0, "stars": 0,
+    # Contest stats
+    "contestRating": 0, "contestTopPercent": 0, "contestsAttended": 0, "globalRank": "N/A",
+    # Activity stats
+    "lastSubmission": "N/A", "lastSubmissionTime": 0,
+    # Language stats
+    "topLanguage": "N/A",
+    # Calculated stats
+    "acceptanceRate": 0
+}
+
+# Load stats with comprehensive fallback
 try:
     with open(output_dir / "stats.json") as f:
         data = json.load(f)
-except:
-    data = {
-        "solved": 0, "easy": 0, "medium": 0, "hard": 0,
-        "ranking": "N/A", "contestRating": 0, "contestTopPercent": 0,
-        "contestsAttended": 0, "lastSubmission": "N/A", "acceptanceRate": 0,
-        "reputation": 0, "stars": 0, "globalRank": "N/A", "topLanguage": "N/A"
-    }
+    # Ensure all keys exist
+    data = {**DEFAULT_STATS, **data}
+except Exception as e:
+    print(f"Error loading stats: {e}")
+    data = DEFAULT_STATS
 
-# SVG Template with ALL stats
+# SVG Template with safe value access
 svg = f'''
 <svg width="500" height="280" xmlns="http://www.w3.org/2000/svg">
   <style>
@@ -42,59 +56,37 @@ svg = f'''
   <!-- Problem Stats -->
   <text x="10" y="55" class="stat-label">Problems Solved:</text>
   <text x="120" y="55" class="stat-value">
-    <tspan class="easy">✓ {data["easy"]} Easy</tspan>
-    <tspan dx="15" class="medium">✓ {data["medium"]} Medium</tspan>
-    <tspan dx="15" class="hard">✓ {data["hard"]} Hard</tspan>
+    <tspan class="easy">✓ {data.get("easy", 0)} Easy</tspan>
+    <tspan dx="15" class="medium">✓ {data.get("medium", 0)} Medium</tspan>
+    <tspan dx="15" class="hard">✓ {data.get("hard", 0)} Hard</tspan>
   </text>
 
   <!-- Total Stats -->
   <text x="10" y="80" class="stat-label">Total Solved:</text>
-  <text x="120" y="80" class="stat-value">{data["solved"]}/{data["totalSubmissions"]}</text>
+  <text x="120" y="80" class="stat-value">{data.get("solved", 0)}/{data.get("totalSubmissions", 0)}</text>
   
   <text x="250" y="80" class="stat-label">Acceptance:</text>
-  <text x="340" y="80" class="stat-value">{data["acceptanceRate"]}%</text>
+  <text x="340" y="80" class="stat-value">{data.get("acceptanceRate", 0)}%</text>
 
   <!-- Contest Stats -->
   <text x="10" y="105" class="stat-label">Contest Rating:</text>
-  <text x="120" y="105" class="stat-value contest">{data["contestRating"]}</text>
+  <text x="120" y="105" class="stat-value contest">{data.get("contestRating", 0)}</text>
   
   <text x="250" y="105" class="stat-label">Top %:</text>
-  <text x="340" y="105" class="stat-value">{data["contestTopPercent"]}%</text>
-
-  <text x="10" y="130" class="stat-label">Contests Attended:</text>
-  <text x="120" y="130" class="stat-value">{data["contestsAttended"]}</text>
-  
-  <text x="250" y="130" class="stat-label">Global Rank:</text>
-  <text x="340" y="130" class="stat-value">#{data["globalRank"]}</text>
-
-  <!-- Profile Stats -->
-  <line x1="10" x2="490" y1="145" y2="145" class="grid"/>
-  
-  <text x="10" y="165" class="stat-label">Profile Rank:</text>
-  <text x="120" y="165" class="stat-value">#{data["ranking"]}</text>
-  
-  <text x="250" y="165" class="stat-label">Reputation:</text>
-  <text x="340" y="165" class="stat-value">{data["reputation"]}</text>
-
-  <text x="10" y="190" class="stat-label">Top Language:</text>
-  <text x="120" y="190" class="stat-value language">{data["topLanguage"]}</text>
-  
-  <text x="250" y="190" class="stat-label">Stars:</text>
-  <text x="340" y="190" class="stat-value">{"★" * int(data["stars"])}</text>
-
-  <!-- Recent Activity -->
-  <line x1="10" x2="490" y1="205" y2="205" class="grid"/>
-  
-  <text x="10" y="225" class="stat-label">Last Solved:</text>
-  <text x="120" y="225" class="stat-value">{data["lastSubmission"]}</text>
+  <text x="340" y="105" class="stat-value">{data.get("contestTopPercent", 0)}%</text>
 
   <!-- Footer -->
   <text x="10" y="265" class="footer">
-    Updated: {datetime.now().strftime("%Y-%m-%d %H:%M UTC")}
+    Updated: {datetime.now().strftime("%Y-%m-%d %H:%M UTC")} | 
+    Last solved: {data.get("lastSubmission", "N/A")}
   </text>
 </svg>
 '''
 
 # Save SVG
-with open(output_dir / "stats.svg", "w") as f:
-    f.write(svg)
+try:
+    with open(output_dir / "stats.svg", "w") as f:
+        f.write(svg)
+    print("SVG generated successfully")
+except Exception as e:
+    print(f"Error saving SVG: {e}")
