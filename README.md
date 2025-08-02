@@ -1,124 +1,128 @@
 <h1 align="center">Hi, I'm Anany Mishra</h1>
 <h3 align="center">A Full Stack Developer & Competitive Programmer</h3>
 
----
+<div align="center">
 
-### My Profiles - 
-- Codeforces: [ananymishradev](https://codeforces.com/profile/ananymishradev)
-- LeetCode: [ananymishradev](https://leetcode.com/ananymishradev)
-- GitHub: [ananymishradev](https://github.com/ananymishradev)
-- LinkedIn: [ananymishradev](https://linkedin.com/in/ananymishradev)
+## My Mission  
+To break into Big Tech (Google, etc.) through raw commitment, self-taught skills, and relentless consistency — while managing college, finances, and personal growth from scratch.
+
+## Career Goals
+Crack **Google Internship** after 2nd year  
+Land a **paid part-time internship** ASAP (Java, AI, or Web Dev)  
+Master **Full Stack Engineering + AI Engineering**  
+Maintain **10 CGPA with 80% attendance** despite 10.5-hour college days  
+Cover ₹1L/year college fees and ₹20k/month personal expenses through freelancing, internships, or open-source sponsorships  
 
 ---
 
 ![LeetCode Stats](https://raw.githubusercontent.com/ananymishradev/ananymishradev/main/outputs/stats.svg)
 
 
----
-### Competitive Programming Stats
 
-![Codeforces Stats](https://raw.githubusercontent.com/ananymishradev/ananymishradev/main/output/codeforces_stats.svg)
+#Where I am 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/@ananymishradev)
+[![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@@ananymishradev) 
+[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@@ananymishradev) 
+[![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:anany.mishra.real@gmail.com) 
 
-### Rating Graph
 
-![Rating Graph](https://raw.githubusercontent.com/ananymishradev/ananymishradev/main/output/rating_over_time.png)
 
-### Tag-wise Problems Solved
+# 💻 Tech Stack
 
-![Tag Chart](https://raw.githubusercontent.com/ananymishradev/ananymishradev/main/output/tag_distribution.png)
+## Languages 
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) 
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) 
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) 
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 
+![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) 
 
-### Difficulty Distribution
+## Web Technology
 
-![Difficulty Chart](https://raw.githubusercontent.com/ananymishradev/ananymishradev/main/output/difficulty_distribution.png)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) 
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) 
+![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white) 
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) 
 
----
 
-### ⚒Languages & Tools
+## Backend
 
-<p align="left">
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"/>
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
-  <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white"/>
-  <img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"/>
-  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"/>
-</p>
+![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white) 
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) 
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) 
+![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white) 
 
----
+## Databases
+![ApacheCassandra](https://img.shields.io/badge/cassandra-%231287B1.svg?style=for-the-badge&logo=apache-cassandra&logoColor=white) 
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) 
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) 
+![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white) 
 
-### GitHub Stats
+## Deployment 
 
-<p align="center">
-  <!-- Row 1: Core Stats (Tighter 28% width) -->
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img src="https://github-readme-stats.vercel.app/api?username=ananymishradev&show_icons=true&theme=merko&border_color=1f6feb&border_radius=8&bg_color=0d1117" width="28%" />
-  </a>
-  <a href="https://git.io/streak-stats">
-    <img src="https://streak-stats.demolab.com?user=ananymishradev&theme=merko&border_color=1f6feb&border_radius=8&background=0d1117" width="28%" />
-  </a>
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ananymishradev&layout=compact&theme=merko&border_color=1f6feb&border_radius=8&bg_color=0d1117" width="28%" />
-  </a>
-</p>
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) 
+![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white) 
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) 
 
-<p align="center">
-  <!-- Row 2: Activity & Trophies (Visible borders) -->
-  <a href="https://github.com/ashutosh00710/github-readme-activity-graph">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=ananymishradev&theme=merko&bg_color=0d1117&color=58a6ff&line=1f6feb&point=58a6ff&area=true&border_color=1f6feb&border_radius=8" width="45%" />
-  </a>
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=ananymishradev&theme=merko&no-bg=false&no-frame=false&border_color=1f6feb&border_radius=8&column=3" width="45%" />
-  </a>
-</p>
 
-<p align="center">
-  <!-- Row 3: Additional Metrics (Uniform merko theme) -->
-  <a href="https://github.com/DenverCoder1/github-readme-streak-stats">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=ananymishradev&theme=merko&border_color=1f6feb&border_radius=8" width="22%" />
-  </a>
-  <a href="https://visitor-badge.glitch.me/">
-    <img src="https://visitor-badge.glitch.me/badge?page_id=ananymishradev.ananymishradev&color=1f6feb&style=flat&border_color=1f6feb&border_radius=8" width="22%" />
-  </a>
-  <a href="https://github.com/Platane/snk">
-    <img src="https://github.com/ananymishradev/ananymishradev/blob/output/github-contribution-grid-snake.svg?palette=merko&border_color=1f6feb" width="22%" />
-  </a>
-  <a href="https://metrics.lecoq.io/">
-    <img src="https://metrics.lecoq.io/ananymishradev?template=classic&languages=1&achievements=1&base.indepth=false&base.hireable=false&repositories=100&languages.colors=merko&languages.threshold=0%25&config.timezone=Asia%2FKolkata&border_color=1f6feb" width="22%" />
-  </a>
-</p>
+## Work Spaces
 
-<p align="center">
-  <!-- Row 4: Mini Badges (Dynamic timestamp) -->
-  <img src="https://img.shields.io/badge/Updated-$(date +"%Y--%m--%d %H:%M")-blue?logo=github&border_color=1f6feb&border_radius=8" width="18%" />
-  <img src="https://img.shields.io/badge/Repos-50-blue?logo=github&border_color=1f6feb&border_radius=8" width="18%" />
-  <img src="https://img.shields.io/badge/Stars-1.2k-yellow?logo=github&border_color=1f6feb&border_radius=8" width="18%" />
-  <img src="https://img.shields.io/badge/Followers-150-blueviolet?logo=github&border_color=1f6feb&border_radius=8" width="18%" />
-  <img src="https://img.shields.io/badge/Contributions-1k-success?logo=github&border_color=1f6feb&border_radius=8" width="18%" />
-</p>
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white) 
+![Jira](https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white)
+
+## Authentication
+
+![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens) 
+
 
 ---
 
-### Ongoing Learning
+# GitHub Stats:
+![](https://github-readme-stats.vercel.app/api?username=ananymishradev&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
+![](https://nirzak-streak-stats.vercel.app/?user=ananymishradev&theme=dark&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=ananymishradev&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
-- Full Stack Development (Java + JS/TS)
-- Competitive Programming (Codeforces, LeetCode)
-- Data Science + AI (Python, ML, Deep Learning)
-- System Design, DevOps, Security
+## GitHub Trophies
+![](https://github-profile-trophy.vercel.app/?username=ananymishradev&theme=radical&no-frame=false&no-bg=false&margin-w=4)
+
+### Random Dev Quote
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+
+### Top Contributed Repo
+![](https://github-contributor-stats.vercel.app/api?username=ananymishradev&limit=5&theme=dark&combine_all_yearly_contributions=true)
+
+[![](https://visitcount.itsvg.in/api?id=ananymishradev&icon=0&color=0)](https://visitcount.itsvg.in)
+
+
 
 ---
 
-### My Goals
+## 2025 Learning Roadmap
+| Area                     | Stack / Topics                                                                                      |
+|--------------------------|-----------------------------------------------------------------------------------------------------|
+| Backend Dev           | Java (Core + Advanced), Spring Boot, APIs, PostgreSQL, Redis, CI/CD, Security, Deployment           |
+| Frontend Dev          | JavaScript, TypeScript, React (15 days), Angular (20hr crash), Tailwind, Gradio UI                  |
+| AI Engineering        | Python, Advanced Stats, ML & DL (TensorFlow), Case Studies, Math for AI                             |
+| DSA & System Design   | Java + Striver SDE Sheet, Auth, Testing, Architecture, Design Patterns                              |
+| DevOps & Infra        | Docker, Kubernetes, GitHub Actions, Jenkins, Terraform, Git                                        |
+| Daily Plan            | 12 hrs/day on weekends, 5 hrs/day on Weekdays; Daily: Java &  JS, Weekend: Python               |
+| Projects              | Mini-project every 3rd week, flagship projects monthly                                              |
 
-- Achieve Candidate Master on Codeforces
-- Land a Big Tech Internship
-- Publish 10+ Real World Projects
-- Contribute to Open Source Communities
-- Keep learning, keep building 
 
----
 
-### ❤️ Support & Connect
 
-If you like what I do, maybe consider ⭐ starring a few repos or connecting with me on LinkedIn - [ananymishradev](https://linkedin.com/in/ananymishradev)
+## Exploring
+Microservices with Spring Cloud  
+System Design for Full Stack (Java + JS)  
+AI + Web Fusion (Gradio + FastAPI + TensorFlow)  
+Financial case studies for RBI prep  
+
+
+## Hobbies
+Gym regular   
+Guitar learner — creative mind = sharp logic  
+
+> **“Built from zero. Scaling toward infinity.”**  
+> — Anany Mishra
+
+If you like what I do, maybe consider ⭐ starring a few repos or connecting with me on [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/@ananymishradev)  
+</div>
