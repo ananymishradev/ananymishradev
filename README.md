@@ -50,15 +50,52 @@
 
 ### GitHub Stats
 
-![GitHub Stats Card](https://raw.githubusercontent.com/ananymishradev/ananymishradev/main/github_stats/github_card.svg)
-
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ananymishradev&show_icons=true&theme=radical" width="48%"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ananymishradev&theme=radical" width="48%"/>
+  <!-- Row 1: Core Stats (Tighter 28% width) -->
+  <a href="https://github.com/anuraghazra/github-readme-stats">
+    <img src="https://github-readme-stats.vercel.app/api?username=ananymishradev&show_icons=true&theme=merko&border_color=1f6feb&border_radius=8&bg_color=0d1117" width="28%" />
+  </a>
+  <a href="https://git.io/streak-stats">
+    <img src="https://streak-stats.demolab.com?user=ananymishradev&theme=merko&border_color=1f6feb&border_radius=8&background=0d1117" width="28%" />
+  </a>
+  <a href="https://github.com/anuraghazra/github-readme-stats">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ananymishradev&layout=compact&theme=merko&border_color=1f6feb&border_radius=8&bg_color=0d1117" width="28%" />
+  </a>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ananymishradev&layout=compact&theme=radical" width="48%"/>
+  <!-- Row 2: Activity & Trophies (Visible borders) -->
+  <a href="https://github.com/ashutosh00710/github-readme-activity-graph">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=ananymishradev&theme=merko&bg_color=0d1117&color=58a6ff&line=1f6feb&point=58a6ff&area=true&border_color=1f6feb&border_radius=8" width="45%" />
+  </a>
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img src="https://github-profile-trophy.vercel.app/?username=ananymishradev&theme=merko&no-bg=false&no-frame=false&border_color=1f6feb&border_radius=8&column=3" width="45%" />
+  </a>
+</p>
+
+<p align="center">
+  <!-- Row 3: Additional Metrics (Uniform merko theme) -->
+  <a href="https://github.com/DenverCoder1/github-readme-streak-stats">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=ananymishradev&theme=merko&border_color=1f6feb&border_radius=8" width="22%" />
+  </a>
+  <a href="https://visitor-badge.glitch.me/">
+    <img src="https://visitor-badge.glitch.me/badge?page_id=ananymishradev.ananymishradev&color=1f6feb&style=flat&border_color=1f6feb&border_radius=8" width="22%" />
+  </a>
+  <a href="https://github.com/Platane/snk">
+    <img src="https://github.com/ananymishradev/ananymishradev/blob/output/github-contribution-grid-snake.svg?palette=merko&border_color=1f6feb" width="22%" />
+  </a>
+  <a href="https://metrics.lecoq.io/">
+    <img src="https://metrics.lecoq.io/ananymishradev?template=classic&languages=1&achievements=1&base.indepth=false&base.hireable=false&repositories=100&languages.colors=merko&languages.threshold=0%25&config.timezone=Asia%2FKolkata&border_color=1f6feb" width="22%" />
+  </a>
+</p>
+
+<p align="center">
+  <!-- Row 4: Mini Badges (Dynamic timestamp) -->
+  <img src="https://img.shields.io/badge/Updated-$(date +"%Y--%m--%d %H:%M")-blue?logo=github&border_color=1f6feb&border_radius=8" width="18%" />
+  <img src="https://img.shields.io/badge/Repos-50-blue?logo=github&border_color=1f6feb&border_radius=8" width="18%" />
+  <img src="https://img.shields.io/badge/Stars-1.2k-yellow?logo=github&border_color=1f6feb&border_radius=8" width="18%" />
+  <img src="https://img.shields.io/badge/Followers-150-blueviolet?logo=github&border_color=1f6feb&border_radius=8" width="18%" />
+  <img src="https://img.shields.io/badge/Contributions-1k-success?logo=github&border_color=1f6feb&border_radius=8" width="18%" />
 </p>
 
 ---
