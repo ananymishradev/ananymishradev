@@ -1,8 +1,7 @@
 
-<h1 align="center"> “Built from zero. Scaling toward infinity.” - Anany </h1> 
 
 <p align="center">
-  <img src="assets/Anany-Readme.png" alt="Anany Mishra">
+  <img src="assests/Anany-Readme.png" alt="Anany Mishra">
 </p>
 
 ## Leetcode 
