@@ -5,6 +5,8 @@
 <div align="center">
   <img src="https://profile-readme-generator.com/assets/snake.svg" alt="Snake animation" />
 </div>
+
+![snake gif](https://github.com/ananymishradev/ananymishradev/blob/output/github-contribution-grid-snake.gif)
   
 ![LeetCode Stats](https://raw.githubusercontent.com/ananymishradev/ananymishradev/main/outputs/stats.svg)
 
