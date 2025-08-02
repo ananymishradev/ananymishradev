@@ -12,7 +12,7 @@
 ---
 ### My LeetCode Progress
 
-![LeetCode Stats](https://raw.githubusercontent.com/ananymishradev/ananymishradev/main/stats.svg)
+![LeetCode Stats](https://raw.githubusercontent.com/ananymishradev/ananymishradev/main/outputs/stats.svg)
 
 [View Full Profile](https://leetcode.com/ananymishradev/)
 
