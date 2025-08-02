@@ -10,11 +10,9 @@
 - LinkedIn: [ananymishradev](https://linkedin.com/in/ananymishradev)
 
 ---
-### My LeetCode Progress
 
 ![LeetCode Stats](https://raw.githubusercontent.com/ananymishradev/ananymishradev/main/outputs/stats.svg)
 
-[View Full Profile](https://leetcode.com/ananymishradev/)
 
 ---
 ### Competitive Programming Stats
