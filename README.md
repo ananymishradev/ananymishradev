@@ -20,9 +20,9 @@ Cover ₹1L/year college fees and ₹20k/month personal expenses through freelan
 
 
 #Where I am 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/@ananymishradev)
-[![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@@ananymishradev) 
-[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@@ananymishradev) 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/ananymishradev)
+[![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@ananymishradev) 
+[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@ananymishradev) 
 [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:anany.mishra.real@gmail.com) 
 
 
@@ -124,5 +124,5 @@ Guitar learner — creative mind = sharp logic
 > **“Built from zero. Scaling toward infinity.”**  
 > — Anany Mishra
 
-If you like what I do, maybe consider ⭐ starring a few repos or connecting with me on [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/@ananymishradev)  
+If you like what I do, maybe consider ⭐ starring a few repos or connecting with me on [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/ananymishradev)  
 </div>
