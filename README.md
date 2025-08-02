@@ -50,6 +50,8 @@
 
 ### GitHub Stats
 
+![GitHub Stats Card](https://raw.githubusercontent.com/ananymishradev/ananymishradev/main/github_stats/github_card.svg)
+
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=ananymishradev&show_icons=true&theme=radical" width="48%"/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=ananymishradev&theme=radical" width="48%"/>
