@@ -1,14 +1,19 @@
-<h1 align="center">Hi, I'm Anany Mishra</h1>
-<h3 align="center">A Full Stack Developer & Competitive Programmer</h3>
-<div align="center"> “Built from zero. Scaling toward infinity.” - Anany </div>  
 
----
+<h1 align="center"> “Built from zero. Scaling toward infinity.” - Anany </h1> 
 
-![Codeforces Stats](https://raw.githubusercontent.com/ananymishradev/ananymishradev/main/stats/codeforces.svg)
+<p align="center">
+  <img src="assets/Anany-Readme.png" alt="Anany Mishra">
+</p>
 
----
+## Leetcode 
 
 ![Leetcode Stats](https://leetcard.jacoblin.cool/ananymishradev?ext=heatmap)
+
+## CodeForces
+
+[![Codeforces Stats](https://codeforces-readme-stats.vercel.app/api/card?username=ananymishradev)](https://codeforces.com/profile/ananymishradev)
+
+## Github
   
 ![](https://github-readme-stats.vercel.app/api?username=ananymishradev&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
 ![](https://nirzak-streak-stats.vercel.app/?user=ananymishradev&theme=dark&hide_border=false)<br/>
@@ -76,7 +81,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/ananymishradev)
 [![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@ananymishradev) 
 [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@ananymishradev) 
-[![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:anany.mishra.real@gmail.com) 
+![Codeforces Badge](https://codeforces-readme-stats.vercel.app/api/badge?username=ananymishradev)
 
 ---
 
@@ -93,4 +98,5 @@
 
 
 
-If you like what I do, maybe consider ⭐ starring a few repos or connecting with me on [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/ananymishradev)  
+If you like what I do, maybe consider ⭐ starring a few repos or connecting with me on [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/ananymishradev)  or [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:anany.mishra.real@gmail.com) 
+
