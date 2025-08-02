@@ -1,0 +1,86 @@
+name: Profile Stats Tracker
+on:
+  schedule:
+    - cron: '0 18 * * *'  # Daily at 6 PM UTC
+  workflow_dispatch:
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: read  # Needed for some GitHub stats
+
+    steps:
+      # Setup
+      - uses: actions/checkout@v4
+      - name: Create outputs directory
+        run: mkdir -p outputs/stats
+
+      # --- LeetCode Stats ---
+      - name: Fetch LeetCode Data
+        id: leetcode
+        run: |
+          # GraphQL query with error handling
+          QUERY='{"query":"query getUserProfile($username: String!) { matchedUser(username: $username) { submitStats { acSubmissionNum { difficulty count } totalSubmissionNum { count } } profile { ranking } userContestRanking { rating topPercentage } } }", "variables":{"username":"ananymishradev"}}'
+          
+          curl -X POST \
+            -H "Content-Type: application/json" \
+            -H "Referer: https://leetcode.com/ananymishradev/" \
+            -d "$QUERY" \
+            https://leetcode.com/graphql > outputs/leetcode_raw.json || echo '{}' > outputs/leetcode_raw.json
+
+          jq '{
+            solved: (.data.matchedUser?.submitStats.acSubmissionNum[0].count // 0),
+            easy: (.data.matchedUser?.submitStats.acSubmissionNum[1].count // 0),
+            medium: (.data.matchedUser?.submitStats.acSubmissionNum[2].count // 0),
+            hard: (.data.matchedUser?.submitStats.acSubmissionNum[3].count // 0),
+            ranking: (.data.matchedUser?.profile.ranking // "N/A"),
+            contestRating: (.data.matchedUser?.userContestRanking.rating // 0 | floor)
+          }' outputs/leetcode_raw.json > outputs/stats/leetcode.json
+
+      # --- GitHub Stats ---
+      - name: Fetch GitHub Data
+        id: github
+        run: |
+          curl -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/users/ananymishradev" > outputs/github_raw.json || echo '{}' > outputs/github_raw.json
+
+          jq '{
+            followers: (.followers // 0),
+            repos: (.public_repos // 0),
+            stars: (. | try [.starred_url.split("/")[-1]] catch 0),
+            created_at: (.created_at // "N/A")
+          }' outputs/github_raw.json > outputs/stats/github.json
+
+          # Get contribution stats
+          curl -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/search/commits?q=author:ananymishradev" \
+            | jq '{total_contributions: (.total_count // 0)}' >> outputs/stats/github.json
+
+      # --- Generate SVGs ---
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Generate All Stats Cards
+        run: |
+          pip install python-dateutil pyjq
+          python scripts/generate_leetcode_svg.py
+          python scripts/generate_github_svg.py
+          
+          # Commit changes
+          git config user.name "GitHub Actions"
+          git config user.email "actions@users.noreply.github.com"
+          git add outputs/*
+          git diff-index --quiet HEAD || git commit -m "Update profile stats [skip ci]"
+          git push
+
+      # --- Debugging ---
+      - name: Verify Outputs
+        if: always()
+        run: |
+          echo "--- LeetCode Stats ---"
+          cat outputs/stats/leetcode.json
+          echo -e "\n--- GitHub Stats ---"
+          cat outputs/stats/github.json
