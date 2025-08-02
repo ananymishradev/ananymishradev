@@ -1,20 +1,26 @@
 <h1 align="center">Hi, I'm Anany Mishra</h1>
 <h3 align="center">A Full Stack Developer & Competitive Programmer</h3>
 
-
+  
 ![LeetCode Stats](https://raw.githubusercontent.com/ananymishradev/ananymishradev/main/outputs/stats.svg)
 
+## GitHub Stats:
+![](https://github-readme-stats.vercel.app/api?username=ananymishradev&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
+![](https://nirzak-streak-stats.vercel.app/?user=ananymishradev&theme=dark&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=ananymishradev&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
+## GitHub Trophies
+![](https://github-profile-trophy.vercel.app/?username=ananymishradev&theme=radical&no-frame=false&no-bg=false&margin-w=4)
 
-#### Where I am 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/ananymishradev)
-[![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@ananymishradev) 
-[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@ananymishradev) 
-[![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:anany.mishra.real@gmail.com) 
+### Random Dev Quote
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
+### Top Contributed Repo
+![](https://github-contributor-stats.vercel.app/api?username=ananymishradev&limit=5&theme=dark&combine_all_yearly_contributions=true)
 
+[![](https://visitcount.itsvg.in/api?id=ananymishradev&icon=0&color=0)](https://visitcount.itsvg.in)
 
-## 💻 Tech Stack
+---
 
 #### Languages 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) 
@@ -64,27 +70,15 @@
 
 ---
 
-## GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=ananymishradev&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=ananymishradev&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=ananymishradev&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
-
-## GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=ananymishradev&theme=radical&no-frame=false&no-bg=false&margin-w=4)
-
-### Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
-
-### Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=ananymishradev&limit=5&theme=dark&combine_all_yearly_contributions=true)
-
-[![](https://visitcount.itsvg.in/api?id=ananymishradev&icon=0&color=0)](https://visitcount.itsvg.in)
-
-
+#### Where I am 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/ananymishradev)
+[![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@ananymishradev) 
+[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@ananymishradev) 
+[![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:anany.mishra.real@gmail.com) 
 
 ---
 
-### 2025 Learning Roadmap
+### Learning Roadmap
 | Area                     | Stack / Topics                                                                                      |
 |--------------------------|-----------------------------------------------------------------------------------------------------|
 | Backend Dev           | Java (Core + Advanced), Spring Boot, APIs, PostgreSQL, Redis, CI/CD, Security, Deployment           |
