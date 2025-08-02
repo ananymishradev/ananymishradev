@@ -1,1 +1,5 @@
+matplotlib
 requests
+pandas
+beautifulsoup4
+jinja2
