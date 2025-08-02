@@ -1,6 +1,10 @@
 <h1 align="center">Hi, I'm Anany Mishra</h1>
 <h3 align="center">A Full Stack Developer & Competitive Programmer</h3>
+<!-- Snake Game Repo View -->
 
+<div align="center">
+  <img src="https://profile-readme-generator.com/assets/snake.svg" alt="Snake animation" />
+</div>
   
 ![LeetCode Stats](https://raw.githubusercontent.com/ananymishradev/ananymishradev/main/outputs/stats.svg)
 
