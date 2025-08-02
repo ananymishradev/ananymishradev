@@ -1,0 +1,83 @@
+
+<svg width="540" height="320" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .background { fill: #0d1117; }
+    .header { 
+      font: bold 22px 'Segoe UI', Arial, sans-serif; 
+      fill: #58a6ff;
+    }
+    .stat-label {
+      font: 14px 'Segoe UI', Arial, sans-serif;
+      fill: #8b949e;
+    }
+    .stat-value {
+      font: bold 14px 'Segoe UI', Arial, sans-serif;
+      fill: #c9d1d9;
+    }
+    .highlight { fill: #1f6feb; }
+    .success { fill: #2ea043; }
+    .grid { stroke: #30363d; stroke-width: 0.5; }
+  </style>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" rx="5" class="background"/>
+
+  <!-- Header -->
+  <text x="20" y="40" class="header">GitHub Profile Overview</text>
+  <line x1="20" x2="520" y1="50" y2="50" class="grid"/>
+
+  <!-- Profile Section -->
+  <text x="20" y="80" class="stat-label">Account:</text>
+  <text x="100" y="80" class="stat-value">
+    <tspan class="highlight">0y 3m</tspan> old • 
+    <tspan class="success">6 repos</tspan>
+  </text>
+
+  <!-- Social Stats -->
+  <text x="20" y="110" class="stat-label">Community:</text>
+  <text x="120" y="110" class="stat-value">
+    <tspan class="highlight">👥 0 followers</tspan> • 
+    <tspan class="success">🤝 0 following</tspan> • 
+    <tspan>⭐ 4 stars</tspan>
+  </text>
+
+  <!-- Activity -->
+  <text x="20" y="140" class="stat-label">Activity:</text>
+  <text x="100" y="140" class="stat-value">
+    <tspan class="highlight">📌 75 commits (1y)</tspan> • 
+    Last active: 2025-08-02
+  </text>
+
+  <!-- Languages -->
+  <text x="20" y="180" class="stat-label">Top Languages:</text>
+  
+        <text x="20" y="220" class="stat-label">
+            HTML: <tspan class="stat-value">33.3%</tspan>
+        </text>
+        <rect x="120" y="215" width="83.33333333333331" height="10" 
+              fill="#8b949e" rx="2"/>
+        
+
+        <text x="20" y="245" class="stat-label">
+            JavaScript: <tspan class="stat-value">33.3%</tspan>
+        </text>
+        <rect x="120" y="240" width="83.33333333333331" height="10" 
+              fill="#1f6feb" rx="2"/>
+        
+
+        <text x="20" y="270" class="stat-label">
+            Python: <tspan class="stat-value">33.3%</tspan>
+        </text>
+        <rect x="120" y="265" width="83.33333333333331" height="10" 
+              fill="#2ea043" rx="2"/>
+        
+
+  <!-- Footer -->
+  <line x1="20" x2="520" y1="280" y2="280" class="grid"/>
+  <text x="20" y="300" class="stat-label" font-size="12">
+    Updated: 2025-08-02 14:30 UTC
+  </text>
+  <text x="400" y="300" class="stat-label" font-size="12">
+    @None
+  </text>
+</svg>

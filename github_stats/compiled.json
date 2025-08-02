@@ -1,0 +1,22 @@
+{
+  "profile": {
+    "username": null,
+    "followers": 0,
+    "following": 0,
+    "public_repos": 6,
+    "stars": 4,
+    "created_at": "2025-05-04T08:32:45Z",
+    "company": "N/A",
+    "location": "India"
+  },
+  "activity": {
+    "yearly_contributions": 75,
+    "last_active": "2025-08-02",
+    "repos_updated": 6
+  },
+  "languages": {
+    "HTML": 1,
+    "JavaScript": 1,
+    "Python": 1
+  }
+}
