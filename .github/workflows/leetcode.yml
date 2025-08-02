@@ -14,13 +14,20 @@ jobs:
       - name: Fetch LeetCode Stats
         uses: jeffreytse/leetcode-stats@v1.5.0
         with:
-          leetcode_username: ananymishradev  # Replace if needed
-          output_file: stats.json           # Stores stats in JSON
+          leetcode_username: ananymishradev
+          output_file: stats.json  # Stores data in JSON
 
-      - name: Commit and Push Changes
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Generate SVG Badge
         run: |
+          pip install python-dateutil
+          python scripts/generate_svg.py
           git config user.name "GitHub Actions"
           git config user.email "actions@users.noreply.github.com"
-          git add stats.json
+          git add stats.json stats.svg
           git commit -m "Update LeetCode stats"
           git push
