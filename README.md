@@ -1,19 +1,6 @@
 <h1 align="center">Hi, I'm Anany Mishra</h1>
 <h3 align="center">A Full Stack Developer & Competitive Programmer</h3>
 
-<div align="center">
-
-#### My Mission  
-To break into Big Tech (Google, etc.) through raw commitment, self-taught skills, and relentless consistency — while managing college, finances, and personal growth from scratch.
-
-#### Career Goals
-Crack **Google Internship** after 2nd year  
-Land a **paid part-time internship** ASAP (Java, AI, or Web Dev)  
-Master **Full Stack Engineering + AI Engineering**  
-Maintain **10 CGPA with 80% attendance** despite 10.5-hour college days  
-Cover ₹1L/year college fees and ₹20k/month personal expenses through freelancing, internships, or open-source sponsorships  
-
----
 
 ![LeetCode Stats](https://raw.githubusercontent.com/ananymishradev/ananymishradev/main/outputs/stats.svg)
 
@@ -117,13 +104,9 @@ System Design for Full Stack (Java + JS)
 AI + Web Fusion (Gradio + FastAPI + TensorFlow)  
 Financial case studies for RBI prep  
 
-
-### Hobbies
-Gym regular   
-Guitar learner — creative mind = sharp logic  
+  
 
 > **“Built from zero. Scaling toward infinity.”**  
 > — Anany Mishra
 
 If you like what I do, maybe consider ⭐ starring a few repos or connecting with me on [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/ananymishradev)  
-</div>
