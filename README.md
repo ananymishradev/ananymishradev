@@ -2,12 +2,9 @@
 <h3 align="center">A Full Stack Developer & Competitive Programmer</h3>
 <div align="center"> “Built from zero. Scaling toward infinity.” - Anany </div>  
 
-<h3 align="center">Exploring</h3>
-<div align="center">
-Microservices with Spring Cloud<br>  
-System Design for Full Stack (Java + JS)<br>  
-AI + Web Fusion (Gradio + FastAPI + TensorFlow)<br>  
-</div>
+---
+
+![Codeforces Stats](https://raw.githubusercontent.com/ananymishradev/ananymishradev/main/stats/codeforces.svg)
 
 ---
 
