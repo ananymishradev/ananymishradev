@@ -2,7 +2,7 @@ name: LeetCode Stats Tracker
 on:
   schedule:
     - cron: '0 18 * * *'  # Daily at 6 PM UTC
-  workflow_dispatch:      # Manual trigger option
+  workflow_dispatch:
 
 jobs:
   update-stats:
@@ -11,15 +11,14 @@ jobs:
       contents: write
     
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Create Outputs Directory
+      - name: Create outputs directory
         run: mkdir -p outputs
 
-      - name: Fetch LeetCode Data
+      - name: Fetch LeetCode data
         run: |
-          # GraphQL query for all stats
+          # GraphQL query for ALL stats
           QUERY='{
             "query":"query getUserProfile($username: String!) {
               matchedUser(username: $username) {
@@ -27,22 +26,28 @@ jobs:
                   acSubmissionNum { difficulty count }
                   totalSubmissionNum { count }
                 }
-                profile { ranking }
-                userContestRanking { rating attendedContestsCount topPercentage }
-                recentSubmissionList(limit: 1) { title }
+                profile {
+                  ranking
+                  reputation
+                  starRating
+                }
+                userContestRanking {
+                  rating
+                  topPercentage
+                  attendedContestsCount
+                  globalRanking
+                }
+                recentSubmissionList(limit: 5) { title timestamp }
+                languageProblemCount {
+                  languageName
+                  problemsSolved
+                }
               }
             }",
             "variables":{"username":"ananymishradev"}
           }'
 
-          # Fallback data
-          FALLBACK_DATA='{
-            "solved": 0, "easy": 0, "medium": 0, "hard": 0,
-            "ranking": "N/A", "contestRating": 0, "contestTopPercent": 0,
-            "contestsAttended": 0, "lastSubmission": "N/A", "acceptanceRate": 0
-          }'
-
-          # Try with retries
+          # Try with 3 retries
           for i in {1..3}; do
             curl -X POST \
               -H "Content-Type: application/json" \
@@ -52,29 +57,49 @@ jobs:
             sleep 5
           done
 
-          # Process data with error handling
+          # Process ALL stats with error handling
           jq '{
+            # Problem stats
             solved: (.data.matchedUser.submitStats.acSubmissionNum[0].count // 0),
             easy: (.data.matchedUser.submitStats.acSubmissionNum[1].count // 0),
             medium: (.data.matchedUser.submitStats.acSubmissionNum[2].count // 0),
             hard: (.data.matchedUser.submitStats.acSubmissionNum[3].count // 0),
+            totalSubmissions: (.data.matchedUser.submitStats.totalSubmissionNum[0].count // 0),
+            
+            # Profile stats
             ranking: (.data.matchedUser.profile.ranking // "N/A"),
-            contestRating: (.data.matchedUser.userContestRanking?.rating // 0 | floor),
-            contestTopPercent: (.data.matchedUser.userContestRanking?.topPercentage // 0 | tonumber | round * 100 | . / 100),
-            contestsAttended: (.data.matchedUser.userContestRanking?.attendedContestsCount // 0),
-            lastSubmission: (.data.matchedUser.recentSubmissionList[0]?.title // "N/A"),
+            reputation: (.data.matchedUser.profile.reputation // 0),
+            stars: (.data.matchedUser.profile.starRating // 0),
+            
+            # Contest stats
+            contestRating: (.data.matchedUser.userContestRanking.rating // 0 | floor),
+            contestTopPercent: (.data.matchedUser.userContestRanking.topPercentage // 0),
+            contestsAttended: (.data.matchedUser.userContestRanking.attendedContestsCount // 0),
+            globalRank: (.data.matchedUser.userContestRanking.globalRanking // "N/A"),
+            
+            # Activity stats
+            lastSubmission: (.data.matchedUser.recentSubmissionList[0].title // "N/A"),
+            lastSubmissionTime: (.data.matchedUser.recentSubmissionList[0].timestamp // 0),
+            
+            # Language stats
+            topLanguage: (
+              .data.matchedUser.languageProblemCount 
+              | max_by(.problemsSolved).languageName 
+              // "N/A"
+            ),
             acceptanceRate: (
-              ((.data.matchedUser.submitStats.acSubmissionNum[0].count // 1) / 
-               (.data.matchedUser.submitStats.totalSubmissionNum[0].count // 1) * 100 | round / 100)
+              (.data.matchedUser.submitStats.acSubmissionNum[0].count / 
+               .data.matchedUser.submitStats.totalSubmissionNum[0].count * 100 
+               | round(1)) 
+              // 0
             )
-          }' outputs/leetcode_raw.json > outputs/stats.json || echo "$FALLBACK_DATA" > outputs/stats.json
+          }' outputs/leetcode_raw.json > outputs/stats.json || echo '{}' > outputs/stats.json
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - uses: actions/setup-python@v4
         with:
           python-version: '3.10'
 
-      - name: Generate SVG Badge
+      - name: Generate enhanced SVG
         run: |
           pip install python-dateutil
           python scripts/generate_svg.py
