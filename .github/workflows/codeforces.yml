@@ -2,7 +2,7 @@ name: Update Codeforces Stats
 
 on:
   schedule:
-    - cron: '30 19 * * *'  # Runs at 1:00 AM IST
+    - cron: '30 19 * * *'  # 1:00 AM IST
   workflow_dispatch:
 
 jobs:
@@ -23,17 +23,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run stats script
+      - name: Run Codeforces stats script
         run: python scripts/fetch_cf_stats.py
 
-      - name: Push changes
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      - name: Commit and Push changes
         run: |
           git config --global user.name "ananymishradev"
           git config --global user.email "anany.mishra.real@gmail.com"
-          git add README.md
+          git add README.md output/*
           git commit -m "Update Codeforces stats" || echo "No changes to commit"
-          git remote set-url origin https://ananymishradev:${GH_TOKEN}@github.com/ananymishradev/ananymishradev.git
-          git push origin HEAD:main
-
+          git push https://ananymishradev:${{ secrets.GH_TOKEN }}@github.com/ananymishradev/ananymishradev.git HEAD:main
