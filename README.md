@@ -1,20 +1,26 @@
 <h1 align="center">Hi, I'm Anany Mishra</h1>
 <h3 align="center">A Full Stack Developer & Competitive Programmer</h3>
+<div align="center"> “Built from zero. Scaling toward infinity.” - Anany </div>  
+
+<h3 align="center">Exploring</h3>
+<div align="center">
+Microservices with Spring Cloud<br>  
+System Design for Full Stack (Java + JS)<br>  
+AI + Web Fusion (Gradio + FastAPI + TensorFlow)<br>  
+</div>
+
+---
 
 ![Leetcode Stats](https://leetcard.jacoblin.cool/ananymishradev?ext=heatmap)
   
-## GitHub Stats:
 ![](https://github-readme-stats.vercel.app/api?username=ananymishradev&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
 ![](https://nirzak-streak-stats.vercel.app/?user=ananymishradev&theme=dark&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=ananymishradev&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
-## GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=ananymishradev&theme=radical&no-frame=false&no-bg=false&margin-w=4)
 
-### Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
-### Top Contributed Repo
 ![](https://github-contributor-stats.vercel.app/api?username=ananymishradev&limit=5&theme=dark&combine_all_yearly_contributions=true)
 
 [![](https://visitcount.itsvg.in/api?id=ananymishradev&icon=0&color=0)](https://visitcount.itsvg.in)
@@ -89,17 +95,5 @@
 | Projects              | Mini-project every 3rd week, flagship projects monthly                                              |
 
 
-
-
-### Exploring
-Microservices with Spring Cloud  
-System Design for Full Stack (Java + JS)  
-AI + Web Fusion (Gradio + FastAPI + TensorFlow)  
-Financial case studies for RBI prep  
-
-  
-
-> **“Built from zero. Scaling toward infinity.”**  
-> — Anany Mishra
 
 If you like what I do, maybe consider ⭐ starring a few repos or connecting with me on [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/ananymishradev)  
