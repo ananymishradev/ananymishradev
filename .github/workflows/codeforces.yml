@@ -26,10 +26,10 @@ jobs:
       - name: Run stats script
         run: python scripts/fetch_cf_stats.py
 
-      - name: Commit and push changes
-        run: |
-          git config --global user.name 'ananymishradev'
-          git config --global user.email 'anany.mishra.real@gmail.com'
-          git add README.md
-          git commit -m "Update Codeforces stats" || echo "No changes to commit"
-          git push
+      - name: Push changes
+      run: |
+        git config --global user.name 'ananymishradev'
+        git config --global user.email 'anany.mishra.real@gmail.com'
+        git add output/
+        git commit -m "Update Codeforces stats" || echo "No changes to commit"
+        git push https://ananymishradev:${{ secrets.GH_PAT }}@github.com/ananymishradev/ananymishradev.git HEAD:main
