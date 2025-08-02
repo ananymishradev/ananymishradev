@@ -1,8 +1,8 @@
 name: Update LeetCode Stats
 on:
   schedule:
-    - cron: '0 0 * * *'  # Runs daily at midnight UTC
-  workflow_dispatch:     # Allows manual triggering
+    - cron: '0 0 * * *'  # Daily update
+  workflow_dispatch:      # Manual trigger
 
 jobs:
   update-stats:
@@ -11,20 +11,25 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Fetch LeetCode Stats
-        uses: jeffreytse/leetcode-stats@v1.5.0
-        with:
-          leetcode_username: ananymishradev
-          output_file: stats.json  # Stores data in JSON
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-
-      - name: Generate SVG Badge
+      - name: Fetch LeetCode Stats (Official API)
         run: |
-          pip install python-dateutil
+          # Fetch using LeetCode's GraphQL API
+          curl -X POST https://leetcode.com/graphql \
+            -H "Content-Type: application/json" \
+            -d '{"query":"query getUserProfile($username: String!) { matchedUser(username: $username) { submitStats { acSubmissionNum { difficulty count } } profile { ranking } } }","variables":{"username":"ananymishradev"}}' \
+            > stats_raw.json
+
+          # Parse response
+          jq '{ 
+            solved: .data.matchedUser.submitStats.acSubmissionNum[0].count,
+            easySolved: .data.matchedUser.submitStats.acSubmissionNum[1].count,
+            mediumSolved: .data.matchedUser.submitStats.acSubmissionNum[2].count,
+            hardSolved: .data.matchedUser.submitStats.acSubmissionNum[3].count,
+            ranking: .data.matchedUser.profile.ranking
+          }' stats_raw.json > stats.json
+
+      - name: Generate SVG
+        run: |
           python scripts/generate_svg.py
           git config user.name "GitHub Actions"
           git config user.email "actions@users.noreply.github.com"
