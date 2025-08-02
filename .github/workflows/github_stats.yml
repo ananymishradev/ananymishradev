@@ -1,0 +1,93 @@
+name: GitHub Stats Tracker
+on:
+  schedule:
+    - cron: '0 12 * * *'  # Daily at noon UTC
+  workflow_dispatch:
+
+jobs:
+  update-github-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: read
+
+    steps:
+      # --- Setup ---
+      - uses: actions/checkout@v4
+      - name: Create output directory
+        run: mkdir -p github_stats
+
+      # --- Fetch Core Profile Data ---
+      - name: Get Profile Info
+        run: |
+          curl -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/users/ananymishradev" > github_stats/profile_raw.json || echo '{}' > github_stats/profile_raw.json
+
+      # --- Fetch Contribution Data ---
+      - name: Get Yearly Contributions
+        run: |
+          curl -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/search/commits?q=author:ananymishradev+committer-date:>$(date -d '1 year ago' +%Y-%m-%d)" \
+            | jq '{contributions: .total_count}' > github_stats/contributions_raw.json || echo '{"contributions":0}' > github_stats/contributions_raw.json
+
+      # --- Fetch Repository Data ---
+      - name: Get Top Repositories
+        run: |
+          curl -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/users/ananymishradev/repos?sort=updated&per_page=5" > github_stats/repos_raw.json || echo '[]' > github_stats/repos_raw.json
+
+      # --- Process All Data ---
+      - name: Compile Stats
+        run: |
+          # Calculate stars from all repos
+          TOTAL_STARS=$(jq 'map(.stargazers_count) | add' github_stats/repos_raw.json || echo 0)
+
+          # Get top 3 languages
+          LANGUAGES=$(jq '[.[].language] | map(select(. != null)) | group_by(.) | map({key: .[0], value: length}) | from_entries' github_stats/repos_raw.json || echo '{}')
+
+          # Merge all data
+          jq -n \
+            --argjson profile "$(cat github_stats/profile_raw.json)" \
+            --argjson contrib "$(cat github_stats/contributions_raw.json)" \
+            --argjson langs "$LANGUAGES" \
+            --arg stars "$TOTAL_STARS" \
+            '{
+              profile: {
+                username: .login,
+                followers: ($profile.followers // 0),
+                following: ($profile.following // 0),
+                public_repos: ($profile.public_repos // 0),
+                stars: ($stars | tonumber),
+                created_at: ($profile.created_at // "N/A"),
+                company: ($profile.company // "N/A"),
+                location: ($profile.location // "N/A")
+              },
+              activity: {
+                yearly_contributions: ($contrib.contributions // 0),
+                last_active: (now | strftime("%Y-%m-%d")),
+                repos_updated: ($profile.public_repos // 0)
+              },
+              languages: $langs
+            }' > github_stats/compiled.json
+
+      # --- Generate SVG ---
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Generate GitHub Card
+        run: |
+          pip install python-dateutil
+          python scripts/generate_github_card.py
+          git config user.name "GitHub Actions"
+          git config user.email "actions@users.noreply.github.com"
+          git add github_stats/
+          git diff-index --quiet HEAD || git commit -m "Update GitHub stats [skip ci]"
+          git push
+
+      # --- Debug Output ---
+      - name: Verify Data
+        if: always()
+        run: |
+          echo "=== Compiled GitHub Stats ==="
+          jq . github_stats/compiled.json
