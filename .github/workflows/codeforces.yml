@@ -10,29 +10,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📥 Checkout repository
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: 🐍 Set up Python
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
 
-      - name: 📦 Install dependencies
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: 🧮 Run Codeforces Stats Script
+      - name: Run stats script
         run: python scripts/fetch_cf_stats.py
 
       - name: Push changes
         env:
-          TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           git config --global user.name "ananymishradev"
           git config --global user.email "anany.mishra.real@gmail.com"
           git add README.md
           git commit -m "Update Codeforces stats" || echo "No changes to commit"
-          git remote set-url origin https://ananymishradev:${TOKEN}@github.com/ananymishradev/ananymishradev.git
+          git remote set-url origin https://ananymishradev:${GH_TOKEN}@github.com/ananymishradev/ananymishradev.git
           git push origin HEAD:main
+
