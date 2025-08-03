@@ -120,18 +120,6 @@
 
 ---
 
-### Learning Roadmap
-| Area                     | Stack / Topics                                                                                      |
-|--------------------------|-----------------------------------------------------------------------------------------------------|
-| Backend Dev           | Java (Core + Advanced), Spring Boot, APIs, PostgreSQL, Redis, CI/CD, Security, Deployment           |
-| Frontend Dev          | JavaScript, TypeScript, React, Angular, Tailwind, Gradio UI                  |
-| AI Engineering        | Python, Advanced Stats, ML & DL (TensorFlow), Case Studies, Math for AI                             |
-| DSA & System Design   | Java + Striver SDE Sheet, Auth, Testing, Architecture, Design Patterns                              |
-| DevOps & Infra        | Docker, Kubernetes, GitHub Actions, Jenkins, Terraform, Git                                        |
-| Daily Plan            | 12 hrs/day on weekends, 5 hrs/day on Weekdays; Daily: Java &  JS, Weekend: Python               |
-| Projects              | Mini-project every 3rd week, flagship projects monthly                                              |
-
-
 
 If you like what I do, maybe consider ⭐ starring a few repos or connecting with me on [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/ananymishradev)  or [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:anany.mishra.real@gmail.com) 
 
