@@ -1,8 +1,11 @@
+<h1 align="center">Anany Mishra Full Stack Developer</h1>
+<h3 align="center">Ruthless effort beat Privileged Advantage - Every Single Time</h3>
 
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+![](https://github-profile-trophy.vercel.app/?username=ananymishradev&theme=radical&no-frame=false&no-bg=false&margin-w=4)
 
-<p align="center">
-  <img src="assests/image.png" alt="Anany Mishra">
-</p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=ananymishradev&label=Profile%20views&color=0e75b6&style=flat" alt="ananymishradev" /> </p>
+
 
 ## Leetcode 
 
@@ -18,9 +21,6 @@
 ![](https://nirzak-streak-stats.vercel.app/?user=ananymishradev&theme=dark&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=ananymishradev&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
-![](https://github-profile-trophy.vercel.app/?username=ananymishradev&theme=radical&no-frame=false&no-bg=false&margin-w=4)
-
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
 ![](https://github-contributor-stats.vercel.app/api?username=ananymishradev&limit=5&theme=dark&combine_all_yearly_contributions=true)
 
@@ -76,10 +76,19 @@
 
 ---
 
-#### Where I am 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/ananymishradev)
-[![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@ananymishradev) 
-[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@ananymishradev) 
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://linkedin.com/in/ananymishradev" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="ananymishradev" height="30" width="40" /></a>
+<a href="https://stackoverflow.com/users/31201232" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="31201232" height="30" width="40" /></a>
+<a href="https://codesandbox.com/ananymishradev" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codesandbox.svg" alt="ananymishradev" height="30" width="40" /></a>
+<a href="https://medium.com/@ananymishradev" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="@ananymishradev" height="30" width="40" /></a>
+<a href="https://www.youtube.com/c/ananymishradev" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="ananymishradev" height="30" width="40" /></a>
+<a href="https://www.hackerrank.com/ananymishradev" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="ananymishradev" height="30" width="40" /></a>
+<a href="https://codeforces.com/profile/ananymishradev" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codeforces.svg" alt="ananymishradev" height="30" width="40" /></a>
+<a href="https://www.leetcode.com/ananymishradev" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="ananymishradev" height="30" width="40" /></a>
+<a href="https://www.hackerearth.com/@ananymishradev" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerearth.svg" alt="@ananymishradev" height="30" width="40" /></a>
+</p>
+
 ![Codeforces Badge](https://codeforces-readme-stats.vercel.app/api/badge?username=ananymishradev)
 
 ---
@@ -98,4 +107,9 @@
 
 
 If you like what I do, maybe consider ⭐ starring a few repos or connecting with me on [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/ananymishradev)  or [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:anany.mishra.real@gmail.com) 
+
+
+---
+
+
 
