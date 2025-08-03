@@ -12,7 +12,7 @@
 
 ## CodeForces
 
-[![Codeforces Stats](https://codeforces-readme-stats.vercel.app/api/card?username=ananymishradev)](https://codeforces.com/profile/ananymishradev)
+[![Codeforces Stats](https://codeforces-readme-stats.vercel.app/api/card?username=ananymishradev&theme=dark)](https://codeforces.com/profile/ananymishradev)
 
 ## Github
   
