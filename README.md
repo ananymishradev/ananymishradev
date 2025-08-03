@@ -91,7 +91,7 @@
 | Area                     | Stack / Topics                                                                                      |
 |--------------------------|-----------------------------------------------------------------------------------------------------|
 | Backend Dev           | Java (Core + Advanced), Spring Boot, APIs, PostgreSQL, Redis, CI/CD, Security, Deployment           |
-| Frontend Dev          | JavaScript, TypeScript, React (15 days), Angular (20hr crash), Tailwind, Gradio UI                  |
+| Frontend Dev          | JavaScript, TypeScript, React, Angular, Tailwind, Gradio UI                  |
 | AI Engineering        | Python, Advanced Stats, ML & DL (TensorFlow), Case Studies, Math for AI                             |
 | DSA & System Design   | Java + Striver SDE Sheet, Auth, Testing, Architecture, Design Patterns                              |
 | DevOps & Infra        | Docker, Kubernetes, GitHub Actions, Jenkins, Terraform, Git                                        |
