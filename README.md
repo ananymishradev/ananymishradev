@@ -1,7 +1,7 @@
 
 
 <p align="center">
-  <img src="assests/Anany-Readme.png" alt="Anany Mishra">
+  <img src="assests/image.png" alt="Anany Mishra">
 </p>
 
 ## Leetcode 
