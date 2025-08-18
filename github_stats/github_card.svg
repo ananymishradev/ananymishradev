@@ -30,7 +30,7 @@
   <text x="20" y="80" class="stat-label">Account:</text>
   <text x="100" y="80" class="stat-value">
     <tspan class="highlight">0y 3m</tspan> old • 
-    <tspan class="success">9 repos</tspan>
+    <tspan class="success">11 repos</tspan>
   </text>
 
   <!-- Social Stats -->
@@ -38,37 +38,30 @@
   <text x="120" y="110" class="stat-value">
     <tspan class="highlight">👥 0 followers</tspan> • 
     <tspan class="success">🤝 0 following</tspan> • 
-    <tspan>⭐ 2 stars</tspan>
+    <tspan>⭐ 1 stars</tspan>
   </text>
 
   <!-- Activity -->
   <text x="20" y="140" class="stat-label">Activity:</text>
   <text x="100" y="140" class="stat-value">
-    <tspan class="highlight">📌 117 commits (1y)</tspan> • 
-    Last active: 2025-08-17
+    <tspan class="highlight">📌 126 commits (1y)</tspan> • 
+    Last active: 2025-08-18
   </text>
 
   <!-- Languages -->
   <text x="20" y="180" class="stat-label">Top Languages:</text>
   
         <text x="20" y="220" class="stat-label">
-            HTML: <tspan class="stat-value">50.0%</tspan>
+            Python: <tspan class="stat-value">100.0%</tspan>
         </text>
-        <rect x="120" y="215" width="125.0" height="10" 
+        <rect x="120" y="215" width="250.0" height="10" 
               fill="#8b949e" rx="2"/>
-        
-
-        <text x="20" y="245" class="stat-label">
-            Python: <tspan class="stat-value">50.0%</tspan>
-        </text>
-        <rect x="120" y="240" width="125.0" height="10" 
-              fill="#1f6feb" rx="2"/>
         
 
   <!-- Footer -->
   <line x1="20" x2="520" y1="280" y2="280" class="grid"/>
   <text x="20" y="300" class="stat-label" font-size="12">
-    Updated: 2025-08-17 12:22 UTC
+    Updated: 2025-08-18 12:25 UTC
   </text>
   <text x="400" y="300" class="stat-label" font-size="12">
     @None
