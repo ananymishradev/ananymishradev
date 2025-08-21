@@ -10,11 +10,12 @@
     "location": "India"
   },
   "activity": {
-    "yearly_contributions": 131,
-    "last_active": "2025-08-20",
+    "yearly_contributions": 133,
+    "last_active": "2025-08-21",
     "repos_updated": 13
   },
   "languages": {
+    "HTML": 1,
     "Java": 1,
     "Python": 1
   }
