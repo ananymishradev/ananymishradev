@@ -30,7 +30,7 @@
   <text x="20" y="80" class="stat-label">Account:</text>
   <text x="100" y="80" class="stat-value">
     <tspan class="highlight">0y 3m</tspan> old • 
-    <tspan class="success">13 repos</tspan>
+    <tspan class="success">14 repos</tspan>
   </text>
 
   <!-- Social Stats -->
@@ -44,38 +44,38 @@
   <!-- Activity -->
   <text x="20" y="140" class="stat-label">Activity:</text>
   <text x="100" y="140" class="stat-value">
-    <tspan class="highlight">📌 133 commits (1y)</tspan> • 
-    Last active: 2025-08-21
+    <tspan class="highlight">📌 134 commits (1y)</tspan> • 
+    Last active: 2025-08-22
   </text>
 
   <!-- Languages -->
   <text x="20" y="180" class="stat-label">Top Languages:</text>
   
         <text x="20" y="220" class="stat-label">
-            HTML: <tspan class="stat-value">33.3%</tspan>
+            HTML: <tspan class="stat-value">25.0%</tspan>
         </text>
-        <rect x="120" y="215" width="83.33333333333331" height="10" 
+        <rect x="120" y="215" width="62.5" height="10" 
               fill="#8b949e" rx="2"/>
         
 
         <text x="20" y="245" class="stat-label">
-            Java: <tspan class="stat-value">33.3%</tspan>
+            Java: <tspan class="stat-value">25.0%</tspan>
         </text>
-        <rect x="120" y="240" width="83.33333333333331" height="10" 
+        <rect x="120" y="240" width="62.5" height="10" 
               fill="#1f6feb" rx="2"/>
         
 
         <text x="20" y="270" class="stat-label">
-            Python: <tspan class="stat-value">33.3%</tspan>
+            Python: <tspan class="stat-value">25.0%</tspan>
         </text>
-        <rect x="120" y="265" width="83.33333333333331" height="10" 
+        <rect x="120" y="265" width="62.5" height="10" 
               fill="#2ea043" rx="2"/>
         
 
   <!-- Footer -->
   <line x1="20" x2="520" y1="280" y2="280" class="grid"/>
   <text x="20" y="300" class="stat-label" font-size="12">
-    Updated: 2025-08-21 12:23 UTC
+    Updated: 2025-08-22 12:22 UTC
   </text>
   <text x="400" y="300" class="stat-label" font-size="12">
     @None
