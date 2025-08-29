@@ -20,9 +20,9 @@
   "site_admin": false,
   "name": "Anany Mishra",
   "company": null,
-  "blog": "anany.mishra.official",
-  "location": "India",
-  "email": "anany.mishra.real@gmail.com",
+  "blog": "",
+  "location": "Bareilly, Uttar Pradesh, India",
+  "email": null,
   "hireable": null,
   "bio": "Certified Spring Professional | Full Stack Open",
   "twitter_username": null,
@@ -31,5 +31,5 @@
   "followers": 0,
   "following": 0,
   "created_at": "2025-05-04T08:32:45Z",
-  "updated_at": "2025-08-06T03:54:09Z"
+  "updated_at": "2025-08-28T14:55:35Z"
 }
