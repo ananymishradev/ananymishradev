@@ -1,19 +1,4 @@
 
-
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
-![](https://github-profile-trophy.vercel.app/?username=ananymishradev&theme=radical&no-frame=false&no-bg=false&margin-w=4)
-
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=ananymishradev&label=Profile%20views&color=0e75b6&style=flat" alt="ananymishradev" /> </p>
-
-
-## LeetCode 
-
-![Leetcode Stats](https://leetcard.jacoblin.cool/ananymishradev?ext=heatmap)
-
-## CodeForces
-
-[![Codeforces Stats](https://codeforces-readme-stats.vercel.app/api/card?username=ananymishradev&theme=dark)](https://codeforces.com/profile/ananymishradev)
-
 ## GitHub
   
 ![](https://github-readme-stats.vercel.app/api?username=ananymishradev&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
@@ -39,26 +24,6 @@
 | **Infrastructure**    | ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) |
 | **Data Analysis**     | ![Apache Hadoop](https://img.shields.io/badge/Apache%20Hadoop-66CCFF?style=for-the-badge&logo=apachehadoop&logoColor=black) |
 | **Tools**              | ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Jira](https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white) ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=Prometheus&logoColor=white) |
-
-
----
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/ananymishradev" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="ananymishradev" height="30" width="40" /></a>
-<a href="https://stackoverflow.com/users/31201232" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="31201232" height="30" width="40" /></a>
-<a href="https://codesandbox.com/ananymishradev" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codesandbox.svg" alt="ananymishradev" height="30" width="40" /></a>
-<a href="https://medium.com/@ananymishradev" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="@ananymishradev" height="30" width="40" /></a>
-<a href="https://www.youtube.com/c/ananymishradev" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="ananymishradev" height="30" width="40" /></a>
-<a href="https://www.hackerrank.com/ananymishradev" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="ananymishradev" height="30" width="40" /></a>
-<a href="https://codeforces.com/profile/ananymishradev" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codeforces.svg" alt="ananymishradev" height="30" width="40" /></a>
-<a href="https://www.leetcode.com/ananymishradev" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="ananymishradev" height="30" width="40" /></a>
-<a href="https://www.hackerearth.com/@ananymishradev" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerearth.svg" alt="@ananymishradev" height="30" width="40" /></a>
-</p>
-
-![Codeforces Badge](https://codeforces-readme-stats.vercel.app/api/badge?username=ananymishradev)
-
-
 
 
 If you like what I do, maybe consider ⭐ starring a few repos or connecting with me on [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/ananymishradev)  or [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:anany.mishra.real@gmail.com) 
