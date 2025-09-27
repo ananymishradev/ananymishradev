@@ -3,19 +3,18 @@
     "username": null,
     "followers": 0,
     "following": 0,
-    "public_repos": 14,
-    "stars": 1,
+    "public_repos": 5,
+    "stars": 3,
     "created_at": "2025-05-04T08:32:45Z",
     "company": "N/A",
     "location": "Bareilly, Uttar Pradesh, India"
   },
   "activity": {
-    "yearly_contributions": 134,
-    "last_active": "2025-09-26",
-    "repos_updated": 14
+    "yearly_contributions": 104,
+    "last_active": "2025-09-27",
+    "repos_updated": 5
   },
   "languages": {
-    "HTML": 1,
     "Java": 1,
     "Python": 1,
     "TypeScript": 1
