@@ -1,17 +1,17 @@
 {
   "profile": {
     "username": null,
-    "followers": 0,
+    "followers": 1,
     "following": 0,
     "public_repos": 5,
-    "stars": 3,
+    "stars": 4,
     "created_at": "2025-05-04T08:32:45Z",
     "company": "N/A",
     "location": "Bareilly, Uttar Pradesh, India"
   },
   "activity": {
     "yearly_contributions": 104,
-    "last_active": "2025-09-29",
+    "last_active": "2025-09-30",
     "repos_updated": 5
   },
   "languages": {

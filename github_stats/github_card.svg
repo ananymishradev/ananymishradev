@@ -36,16 +36,16 @@
   <!-- Social Stats -->
   <text x="20" y="110" class="stat-label">Community:</text>
   <text x="120" y="110" class="stat-value">
-    <tspan class="highlight">👥 0 followers</tspan> • 
+    <tspan class="highlight">👥 1 followers</tspan> • 
     <tspan class="success">🤝 0 following</tspan> • 
-    <tspan>⭐ 3 stars</tspan>
+    <tspan>⭐ 4 stars</tspan>
   </text>
 
   <!-- Activity -->
   <text x="20" y="140" class="stat-label">Activity:</text>
   <text x="100" y="140" class="stat-value">
     <tspan class="highlight">📌 104 commits (1y)</tspan> • 
-    Last active: 2025-09-29
+    Last active: 2025-09-30
   </text>
 
   <!-- Languages -->
@@ -75,7 +75,7 @@
   <!-- Footer -->
   <line x1="20" x2="520" y1="280" y2="280" class="grid"/>
   <text x="20" y="300" class="stat-label" font-size="12">
-    Updated: 2025-09-29 12:23 UTC
+    Updated: 2025-09-30 12:23 UTC
   </text>
   <text x="400" y="300" class="stat-label" font-size="12">
     @None
