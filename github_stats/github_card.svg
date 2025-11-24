@@ -30,7 +30,7 @@
   <text x="20" y="80" class="stat-label">Account:</text>
   <text x="100" y="80" class="stat-value">
     <tspan class="highlight">0y 6m</tspan> old • 
-    <tspan class="success">5 repos</tspan>
+    <tspan class="success">8 repos</tspan>
   </text>
 
   <!-- Social Stats -->
@@ -38,21 +38,21 @@
   <text x="120" y="110" class="stat-value">
     <tspan class="highlight">👥 0 followers</tspan> • 
     <tspan class="success">🤝 0 following</tspan> • 
-    <tspan>⭐ 4 stars</tspan>
+    <tspan>⭐ 2 stars</tspan>
   </text>
 
   <!-- Activity -->
   <text x="20" y="140" class="stat-label">Activity:</text>
   <text x="100" y="140" class="stat-value">
-    <tspan class="highlight">📌 106 commits (1y)</tspan> • 
-    Last active: 2025-11-23
+    <tspan class="highlight">📌 112 commits (1y)</tspan> • 
+    Last active: 2025-11-24
   </text>
 
   <!-- Languages -->
   <text x="20" y="180" class="stat-label">Top Languages:</text>
   
         <text x="20" y="220" class="stat-label">
-            Java: <tspan class="stat-value">33.3%</tspan>
+            C++: <tspan class="stat-value">33.3%</tspan>
         </text>
         <rect x="120" y="215" width="83.33333333333331" height="10" 
               fill="#8b949e" rx="2"/>
@@ -75,7 +75,7 @@
   <!-- Footer -->
   <line x1="20" x2="520" y1="280" y2="280" class="grid"/>
   <text x="20" y="300" class="stat-label" font-size="12">
-    Updated: 2025-11-23 12:20 UTC
+    Updated: 2025-11-24 12:25 UTC
   </text>
   <text x="400" y="300" class="stat-label" font-size="12">
     @None
