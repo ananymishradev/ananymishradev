@@ -45,7 +45,7 @@
   <text x="20" y="140" class="stat-label">Activity:</text>
   <text x="100" y="140" class="stat-value">
     <tspan class="highlight">📌 123 commits (1y)</tspan> • 
-    Last active: 2025-12-14
+    Last active: 2025-12-15
   </text>
 
   <!-- Languages -->
@@ -75,7 +75,7 @@
   <!-- Footer -->
   <line x1="20" x2="520" y1="280" y2="280" class="grid"/>
   <text x="20" y="300" class="stat-label" font-size="12">
-    Updated: 2025-12-14 12:22 UTC
+    Updated: 2025-12-15 12:28 UTC
   </text>
   <text x="400" y="300" class="stat-label" font-size="12">
     @None
