@@ -29,7 +29,7 @@
   <!-- Profile Section -->
   <text x="20" y="80" class="stat-label">Account:</text>
   <text x="100" y="80" class="stat-value">
-    <tspan class="highlight">0y 7m</tspan> old • 
+    <tspan class="highlight">0y 8m</tspan> old • 
     <tspan class="success">8 repos</tspan>
   </text>
 
@@ -45,7 +45,7 @@
   <text x="20" y="140" class="stat-label">Activity:</text>
   <text x="100" y="140" class="stat-value">
     <tspan class="highlight">📌 123 commits (1y)</tspan> • 
-    Last active: 2025-12-29
+    Last active: 2025-12-30
   </text>
 
   <!-- Languages -->
@@ -75,7 +75,7 @@
   <!-- Footer -->
   <line x1="20" x2="520" y1="280" y2="280" class="grid"/>
   <text x="20" y="300" class="stat-label" font-size="12">
-    Updated: 2025-12-29 12:27 UTC
+    Updated: 2025-12-30 12:26 UTC
   </text>
   <text x="400" y="300" class="stat-label" font-size="12">
     @None
