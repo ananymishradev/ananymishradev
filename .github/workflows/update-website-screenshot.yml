@@ -32,7 +32,9 @@ jobs:
       - name: Capture website screenshot
         run: |
           mkdir -p assests
-          python scripts/fetch_website_screenshot.py
+          python scripts/fetch_website_screenshot.py 2>&1 || echo "Script failed with exit code $?"
+          echo "Script completed, checking output..."
+          ls -la assests/
 
       - name: Debug - List files
         run: |
