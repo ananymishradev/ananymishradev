@@ -1,6 +1,8 @@
-![](https://github-readme-stats.vercel.app/api?username=ananymishradev&theme=dark&hide_border=false&include_all_commits=true&count_private=true) ![](https://github-readme-stats.vercel.app/api/top-langs/?username=ananymishradev&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)  
+<div align="center">
 
-If you like what I do, maybe consider ⭐ starring a few repos or connecting with me on [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/ananymishradev)  or [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:anany.mishra.real@gmail.com) 
+<img src="https://api.apiflash.com/v1/urltoimage?access_key=demo&url=https://www.ananymishra.tech&width=1200&height=800&format=png" alt="www.ananymishra.tech" width="100%"/>
+
+</div> 
 
 
 
