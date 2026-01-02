@@ -44,7 +44,7 @@ def setup_driver():
 
 def capture_screenshot(driver, url, output_path):
     """Navigate to URL and capture a screenshot."""
-    print(f"🌐 Navigating to {url}...")
+    print(f"🌐 Navigating to {url}")
     driver.get(url)
     
     # Wait for page to load completely
