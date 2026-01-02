@@ -30,11 +30,21 @@ jobs:
           pip install selenium webdriver-manager
 
       - name: Capture website screenshot
-        run: python scripts/fetch_website_screenshot.py
+        run: |
+          mkdir -p assests
+          python scripts/fetch_website_screenshot.py
+
+      - name: Debug - List files
+        run: |
+          echo "Current directory:"
+          ls -la
+          echo "Assests directory:"
+          ls -la assests/ || echo "assests folder not found"
 
       - name: Commit and push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add assests/website.png
+          git add -A assests/
+          git status
           git diff --staged --quiet || (git commit -m "🖼️ Update website screenshot [skip ci]" && git push)
