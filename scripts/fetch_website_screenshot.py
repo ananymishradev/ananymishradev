@@ -1,25 +1,20 @@
 #!/usr/bin/env python3
 """
-Script to capture a live screenshot of www.ananymishra.tech
+Capture a screenshot of www.ananymishra.tech using a free screenshot API
 """
 
-import sys
-import time
+import urllib.request
+import os
 from pathlib import Path
-
-# Try importing selenium
-try:
-    from selenium import webdriver
-    from selenium.webdriver.chrome.options import Options
-    print("✅ Selenium imported successfully")
-except ImportError as e:
-    print(f"❌ Failed to import selenium: {e}")
-    sys.exit(1)
 
 # Configuration
 WEBSITE_URL = "https://www.ananymishra.tech"
 OUTPUT_DIR = Path("assests")
 OUTPUT_FILE = "website.png"
+
+# Free screenshot API (no API key needed)
+# Using screenshot.abstractapi.com alternative - microlink
+SCREENSHOT_API = f"https://api.microlink.io/?url={WEBSITE_URL}&screenshot=true&meta=false&embed=screenshot.url"
 
 def main():
     print("=" * 50)
@@ -30,60 +25,45 @@ def main():
     OUTPUT_DIR.mkdir(exist_ok=True)
     output_path = OUTPUT_DIR / OUTPUT_FILE
     
-    print(f"📍 URL: {WEBSITE_URL}")
+    print(f"📍 Website: {WEBSITE_URL}")
     print(f"📁 Output: {output_path}")
     
-    # Setup Chrome options
-    print("🔧 Setting up Chrome options...")
-    chrome_options = Options()
-    chrome_options.add_argument("--headless=new")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--disable-dev-shm-usage")
-    chrome_options.add_argument("--disable-gpu")
-    chrome_options.add_argument("--window-size=1920,1080")
-    chrome_options.add_argument("--hide-scrollbars")
+    # Use a simpler approach - direct screenshot via thum.io (free, no key)
+    screenshot_url = f"https://image.thum.io/get/width/1920/crop/1080/noanimate/{WEBSITE_URL}"
     
-    # Start browser
-    print("🚀 Starting Chrome browser...")
-    driver = None
+    print(f"🌐 Fetching screenshot from thum.io...")
+    print(f"📎 URL: {screenshot_url}")
+    
     try:
-        driver = webdriver.Chrome(options=chrome_options)
-        print("✅ Chrome started successfully")
+        # Create request with user agent
+        request = urllib.request.Request(
+            screenshot_url,
+            headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+        )
         
-        # Navigate to page
-        print(f"🌐 Navigating to {WEBSITE_URL}")
-        driver.get(WEBSITE_URL)
+        # Download the screenshot
+        with urllib.request.urlopen(request, timeout=60) as response:
+            image_data = response.read()
+            
+        print(f"📥 Downloaded {len(image_data)} bytes")
         
-        # Wait for page to load
-        print("⏳ Waiting 8 seconds for page to load...")
-        time.sleep(8)
+        # Save to file
+        with open(output_path, 'wb') as f:
+            f.write(image_data)
         
-        # Get page info
-        title = driver.title
-        print(f"📄 Page title: {title}")
-        
-        # Take screenshot
-        print(f"📸 Taking screenshot...")
-        result = driver.save_screenshot(str(output_path))
-        print(f"📸 save_screenshot returned: {result}")
-        
-        # Verify file
+        # Verify
         if output_path.exists():
             size = output_path.stat().st_size
             print(f"✅ SUCCESS! Screenshot saved: {output_path} ({size} bytes)")
         else:
-            print(f"❌ FAILED! File not found: {output_path}")
-            sys.exit(1)
+            print("❌ FAILED! File was not created")
+            exit(1)
             
     except Exception as e:
         print(f"❌ ERROR: {type(e).__name__}: {e}")
         import traceback
         traceback.print_exc()
-        sys.exit(1)
-    finally:
-        if driver:
-            driver.quit()
-            print("🔒 Browser closed")
+        exit(1)
     
     print("=" * 50)
     print("✨ Done!")
