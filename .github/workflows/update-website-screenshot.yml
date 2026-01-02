@@ -1,0 +1,47 @@
+name: Update Website Screenshot
+
+on:
+  schedule:
+    # Runs daily at 00:00 UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  capture-screenshot:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Chrome
+        uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: stable
+
+      - name: Install Python dependencies
+        run: |
+          pip install --upgrade pip
+          pip install selenium webdriver-manager
+
+      - name: Capture website screenshot
+        run: python scripts/fetch_website_screenshot.py
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet assests/website.png || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push changes
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add assests/website.png
+          git commit -m "🖼️ Update website screenshot [skip ci]"
+          git push
