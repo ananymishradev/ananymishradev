@@ -48,7 +48,7 @@ def capture_screenshot(driver, url, output_path):
     driver.get(url)
     
     # Wait for page to load completely
-    print(f"⏳ Waiting {WAIT_TIME} seconds for page to fully load...")
+    print(f"⏳ Waiting {WAIT_TIME} seconds for page to fully load")
     time.sleep(WAIT_TIME)
     
     # Try to wait for body to be present
@@ -56,8 +56,9 @@ def capture_screenshot(driver, url, output_path):
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located(("tag name", "body"))
         )
+        print("✅ Page body loaded")
     except TimeoutException:
-        print("⚠️ Page load timeout, continuing with screenshot...")
+        print("⚠️ Page load timeout, continuing with screenshot")
     
     # Get full page dimensions for full-page screenshot (optional)
     total_height = driver.execute_script("return document.body.scrollHeight")
@@ -66,9 +67,16 @@ def capture_screenshot(driver, url, output_path):
     print(f"📐 Page dimensions: {total_width}x{total_height}")
     
     # Capture screenshot
-    print(f"📸 Capturing screenshot...")
+    print(f"📸 Capturing screenshot to: {output_path}")
     driver.save_screenshot(str(output_path))
-    print(f"✅ Screenshot saved to: {output_path}")
+    
+    # Verify file was created
+    if output_path.exists():
+        file_size = output_path.stat().st_size
+        print(f"✅ Screenshot saved! File size: {file_size} bytes")
+    else:
+        print(f"❌ ERROR: Screenshot file was not created at {output_path}")
+        raise Exception("Screenshot file not created")
 
 
 def capture_full_page_screenshot(driver, url, output_path):
