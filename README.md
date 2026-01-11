@@ -11,18 +11,6 @@
 
 </samp>
 
-<!-- Quote Box -->
-```text
-💭 "I architect and build high-performance, scalable backend systems that power
-    business-critical applications. From JVM optimization to distributed microservices,
-    I deliver solutions that handle millions of requests while maintaining reliability."
-```
-
-<br>
-
-
----
-
 <div align="center">
 
 ### `⚡ What I Do`
@@ -54,7 +42,6 @@
 </tr>
 </table>
 
----
 
 <div align="center">
 
