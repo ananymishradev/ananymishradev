@@ -149,11 +149,58 @@ Learning:
 
 <br>
 
-<a href="https://www.ananymishra.tech" target="_blank">
-  <img src="assests/website.png" alt="Anany Mishra - Portfolio" width="100%"/>
+---
+
+<div align="center">
+
+### `🌐 Live Website Preview`
+
+<!-- Website Status Badges -->
+<a href="https://ananymishra.tech" target="_blank">
+  <img src="https://img.shields.io/website?down_message=Offline&label=Website%20Status&logo=vercel&style=for-the-badge&up_color=22c55e&up_message=Online&url=https%3A%2F%2Fananymishra.tech" alt="Website Status"/>
+</a>
+<a href="https://ananymishra.tech" target="_blank">
+  <img src="https://img.shields.io/badge/HTTPS-Enabled-22c55e?style=for-the-badge&logo=letsencrypt&logoColor=white" alt="HTTPS"/>
 </a>
 
 <br><br>
+
+<!-- Live Website Preview -->
+<div align="center">
+  
+**🖥️ [ananymishra.tech](https://ananymishra.tech)** - *Click to visit live website*
+
+<br>
+
+<!-- Website Screenshot - Updated automatically by GitHub Actions -->
+<a href="https://ananymishra.tech" target="_blank">
+  <img src="assests/website.png" 
+       alt="Anany Mishra - Portfolio Website" 
+       width="100%"
+       style="border-radius: 8px; box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3); border: 2px solid rgba(168, 85, 247, 0.2);"/>
+</a>
+
+<br><br>
+
+<!-- Website Stats and Info -->
+<div align="center">
+
+<sub>
+  🔄 *Screenshot auto-updates daily via GitHub Actions* | 
+  📊 *Last updated: <img src="https://img.shields.io/github/last-commit/ananymishradev/ananymishradev?label=&style=flat-square&color=a855f7" alt="Last Update"/>*
+</sub>
+
+<br><br>
+
+**💡 Pro Tip:** The screenshot above is automatically updated every day to reflect the latest version of my website!
+
+</div>
+
+</div>
+
+</div>
+
+---
 
 <!-- Footer Wave -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0f0f,50:1a1a2e,100:16213e&height=120&section=footer" width="100%"/>

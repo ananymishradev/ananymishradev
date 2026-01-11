@@ -1,0 +1,100 @@
+name: Update Website Screenshot
+
+on:
+  schedule:
+    # Runs daily at 00:00 UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Allows manual trigger
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/update-website-screenshot.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  update-screenshot:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Playwright
+        run: |
+          npm init -y
+          npm install playwright
+          npx playwright install --with-deps chromium
+
+      - name: Take website screenshot
+        run: |
+          node << 'EOF'
+          const { chromium } = require('playwright');
+          const fs = require('fs');
+          const path = require('path');
+          
+          (async () => {
+            const browser = await chromium.launch();
+            const page = await browser.newPage();
+            
+            try {
+              // Set viewport size for high-quality screenshot
+              await page.setViewportSize({ width: 1920, height: 1080 });
+              
+              // Navigate to website
+              console.log('Navigating to https://ananymishra.tech...');
+              await page.goto('https://ananymishra.tech', {
+                waitUntil: 'networkidle',
+                timeout: 30000
+              });
+              
+              // Wait for any animations or lazy-loaded content
+              console.log('Waiting for content to load...');
+              await page.waitForTimeout(3000);
+              
+              // Ensure directory exists
+              const screenshotDir = path.join(process.cwd(), 'assests');
+              if (!fs.existsSync(screenshotDir)) {
+                fs.mkdirSync(screenshotDir, { recursive: true });
+              }
+              
+              // Take screenshot
+              const screenshotPath = path.join(screenshotDir, 'website.png');
+              console.log('Taking screenshot...');
+              await page.screenshot({
+                path: screenshotPath,
+                fullPage: true,
+                quality: 90
+              });
+              
+              console.log(`✅ Screenshot saved to ${screenshotPath}`);
+            } catch (error) {
+              console.error('❌ Error taking screenshot:', error);
+              process.exit(1);
+            } finally {
+              await browser.close();
+            }
+          })();
+          EOF
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add assests/website.png
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "🤖 Auto-update website screenshot [skip ci]"
+            git push
+          fi

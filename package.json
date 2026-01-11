@@ -1,0 +1,21 @@
+{
+  "name": "github-profile-readme",
+  "version": "1.0.0",
+  "description": "GitHub profile README with live website preview",
+  "scripts": {
+    "screenshot": "node scripts/update-screenshot.js"
+  },
+  "keywords": [
+    "github",
+    "profile",
+    "readme",
+    "website",
+    "screenshot"
+  ],
+  "author": "Anany Mishra",
+  "license": "MIT",
+  "dependencies": {
+    "playwright": "^1.40.0"
+  },
+  "devDependencies": {}
+}
