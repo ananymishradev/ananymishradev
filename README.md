@@ -1,10 +1,4 @@
 <div align="center">
-
-<!-- Hero Banner -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0f0f,50:1a1a2e,100:16213e&height=200&section=header&text=&fontSize=0" width="100%"/>
-
-<br>
-
 <!-- Typing Animation -->
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=28&duration=3000&pause=1000&color=A855F7&center=true&vCenter=true&random=false&width=600&lines=Anany+Mishra;Backend+Engineer;Distributed+Systems+Architect" alt="Typing SVG" /></a>
 
@@ -17,24 +11,6 @@
 
 </samp>
 
-<br>
-
-<!-- Social Badges -->
-<a href="https://www.ananymishra.tech" target="_blank">
-  <img src="https://img.shields.io/badge/Portfolio-ananymishra.tech-a855f7?style=for-the-badge&logo=safari&logoColor=white" alt="Portfolio"/>
-</a>
-<a href="https://linkedin.com/in/ananymishradev" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-ananymishradev-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-</a>
-<a href="https://github.com/ananymishradev" target="_blank">
-  <img src="https://img.shields.io/badge/GitHub-ananymishradev-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-</a>
-<a href="mailto:anany.mishra.dev@gmail.com">
-  <img src="https://img.shields.io/badge/Email-anany.mishra.dev-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-</a>
-
-<br><br>
-
 <!-- Quote Box -->
 ```text
 💭 "I architect and build high-performance, scalable backend systems that power
@@ -44,7 +20,6 @@
 
 <br>
 
-</div>
 
 ---
 
@@ -92,118 +67,21 @@
 
 <br><br>
 
-<!-- More specific badges -->
-<img src="https://img.shields.io/badge/JVM_Internals-Expert-a855f7?style=flat-square&logo=java&logoColor=white" />
-<img src="https://img.shields.io/badge/Spring_Boot-3.x-6DB33F?style=flat-square&logo=springboot&logoColor=white" />
-<img src="https://img.shields.io/badge/Apache_Kafka-Streaming-231F20?style=flat-square&logo=apachekafka&logoColor=white" />
-<img src="https://img.shields.io/badge/PostgreSQL-Advanced-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
-<img src="https://img.shields.io/badge/Redis-Caching-DC382D?style=flat-square&logo=redis&logoColor=white" />
-<img src="https://img.shields.io/badge/Docker-Containers-2496ED?style=flat-square&logo=docker&logoColor=white" />
-<img src="https://img.shields.io/badge/Kubernetes-Orchestration-326CE5?style=flat-square&logo=kubernetes&logoColor=white" />
-<img src="https://img.shields.io/badge/Prometheus-Metrics-E6522C?style=flat-square&logo=prometheus&logoColor=white" />
-
-</div>
-
 ---
 
 <div align="center">
-
-### `Current Focus`
-
-```yaml
-Deep Diving Into:
-  - JVM internals & performance optimization
-  - Spring Boot & microservices architecture
-  - Distributed systems & Apache Kafka
-  - Observability & production readiness
-
-Learning:
-  - Data structures & algorithms (LeetCode)
-  - System design patterns
-  - Chaos engineering principles
-```
-
-</div>
-
----
-
-<div align="center">
-
-### `📈 GitHub Stats`
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=ananymishradev&bg_color=0d1117&color=a855f7&line=a855f7&point=ffffff&area_color=a855f7&area=true&hide_border=true" width="98%"/>
-
-</div>
-
-<div align="center">
-
-<img src="https://komarev.com/ghpvc/?username=ananymishradev&style=for-the-badge&color=a855f7&label=Profile+Views" alt="Profile Views"/>
-
-<br><br>
-
-<samp>
-
-**⭐ If you find my work interesting, consider giving it a star!**
-
-</samp>
-
-<br>
-
----
-
-<div align="center">
-
-### `🌐 Live Website Preview`
-
-<!-- Website Status Badges -->
-<a href="https://ananymishra.tech" target="_blank">
-  <img src="https://img.shields.io/website?down_message=Offline&label=Website%20Status&logo=vercel&style=for-the-badge&up_color=22c55e&up_message=Online&url=https%3A%2F%2Fananymishra.tech" alt="Website Status"/>
+<!-- Social Badges -->
+<a href="https://www.ananymishra.tech" target="_blank">
+  <img src="https://img.shields.io/badge/Portfolio-ananymishra.tech-a855f7?style=for-the-badge&logo=safari&logoColor=white" alt="Portfolio"/>
 </a>
-<a href="https://ananymishra.tech" target="_blank">
-  <img src="https://img.shields.io/badge/HTTPS-Enabled-22c55e?style=for-the-badge&logo=letsencrypt&logoColor=white" alt="HTTPS"/>
+<a href="https://linkedin.com/in/ananymishradev" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-ananymishradev-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a>
+<a href="https://github.com/ananymishradev" target="_blank">
+  <img src="https://img.shields.io/badge/GitHub-ananymishradev-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+</a>
+<a href="mailto:anany.mishra.dev@gmail.com">
+  <img src="https://img.shields.io/badge/Email-anany.mishra.dev-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
 </a>
 
 <br><br>
-
-<!-- Live Website Preview -->
-<div align="center">
-  
-**🖥️ [ananymishra.tech](https://ananymishra.tech)** - *Click to visit live website*
-
-<br>
-
-<!-- Website Screenshot - Updated automatically by GitHub Actions -->
-<a href="https://ananymishra.tech" target="_blank">
-  <img src="assests/website.png" 
-       alt="Anany Mishra - Portfolio Website" 
-       width="100%"
-       style="border-radius: 8px; box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3); border: 2px solid rgba(168, 85, 247, 0.2);"/>
-</a>
-
-<br><br>
-
-<!-- Website Stats and Info -->
-<div align="center">
-
-<sub>
-  🔄 *Screenshot auto-updates daily via GitHub Actions* | 
-  📊 *Last updated: <img src="https://img.shields.io/github/last-commit/ananymishradev/ananymishradev?label=&style=flat-square&color=a855f7" alt="Last Update"/>*
-</sub>
-
-<br><br>
-
-**💡 Pro Tip:** The screenshot above is automatically updated every day to reflect the latest version of my website!
-
-</div>
-
-</div>
-
-</div>
-
----
-
-<!-- Footer Wave -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0f0f,50:1a1a2e,100:16213e&height=120&section=footer" width="100%"/>
-
-</div>
-
