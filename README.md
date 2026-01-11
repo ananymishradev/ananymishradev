@@ -4,13 +4,6 @@
 
 <br><br>
 
-<!-- Tagline -->
-<samp>
-
-**`Calm engineering in a noisy world.`**
-
-</samp>
-
 <div align="center">
 
 ### `⚡ What I Do`
@@ -61,14 +54,4 @@
 <a href="https://www.ananymishra.tech" target="_blank">
   <img src="https://img.shields.io/badge/Portfolio-ananymishra.tech-a855f7?style=for-the-badge&logo=safari&logoColor=white" alt="Portfolio"/>
 </a>
-<a href="https://linkedin.com/in/ananymishradev" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-ananymishradev-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-</a>
-<a href="https://github.com/ananymishradev" target="_blank">
-  <img src="https://img.shields.io/badge/GitHub-ananymishradev-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-</a>
-<a href="mailto:anany.mishra.dev@gmail.com">
-  <img src="https://img.shields.io/badge/Email-anany.mishra.dev-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-</a>
-
 <br><br>
