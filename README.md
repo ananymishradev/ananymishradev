@@ -1,57 +1,93 @@
 <div align="center">
+
 <!-- Typing Animation -->
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=28&duration=3000&pause=1000&color=A855F7&center=true&vCenter=true&random=false&width=600&lines=Anany+Mishra;Backend+Engineer;Distributed+Systems+Architect" alt="Typing SVG" /></a>
-
-<br><br>
-
-<div align="center">
-
-### `⚡ What I Do`
-
-</div>
-
-<table align="center">
-<tr>
-<td align="center" width="200">
-<img src="https://skillicons.dev/icons?i=java" width="48" height="48" alt="Java" />
-<br><strong>Backend Engineering</strong>
-<br><sub>Java • Spring Boot • Distributed Systems</sub>
-</td>
-<td align="center" width="200">
-<img src="https://skillicons.dev/icons?i=kafka" width="48" height="48" alt="Kafka" />
-<br><strong>Systems Thinking</strong>
-<br><sub>Understanding how components work together</sub>
-</td>
-<td align="center" width="200">
-<img src="https://skillicons.dev/icons?i=docker" width="48" height="48" alt="Docker" />
-<br><strong>Performance Focus</strong>
-<br><sub>JVM optimization & high-throughput systems</sub>
-</td>
-<td align="center" width="200">
-<img src="https://skillicons.dev/icons?i=kubernetes" width="48" height="48" alt="K8s" />
-<br><strong>Production Ready</strong>
-<br><sub>Reliability • Observability • Testing</sub>
-</td>
-</tr>
-</table>
-
-
-<div align="center">
-
-### `Tech Arsenal`
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=3000&pause=1000&color=A855F7&center=true&vCenter=true&multiline=true&repeat=true&random=false&width=600&height=100&lines=Building+High-Performance+Systems;Scaling+to+Millions+of+Requests;Obsessed+with+Clean+Architecture" alt="Typing SVG" />
+</a>
 
 <br>
 
-<!-- Tech Stack Icons -->
-<img src="https://skillicons.dev/icons?i=java,spring,postgres,redis,mongodb,kafka,docker,kubernetes,aws,git&theme=dark" />
+<!-- Social Badges with Hover Effects -->
+<p align="center">
+  <a href="https://www.ananymishra.tech" target="_blank">
+    <img src="https://img.shields.io/badge/🌐_Portfolio-ananymishra.tech-a855f7?style=for-the-badge&logoColor=white" alt="Portfolio"/>
+  </a>
+  <a href="https://linkedin.com/in/ananymishradev" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="https://github.com/ananymishradev" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+</p>
 
-<br><br>
+</div>
 
----
+
+
+## Tech Arsenal
 
 <div align="center">
-<!-- Social Badges -->
-<a href="https://www.ananymishra.tech" target="_blank">
-  <img src="https://img.shields.io/badge/Portfolio-ananymishra.tech-a855f7?style=for-the-badge&logo=safari&logoColor=white" alt="Portfolio"/>
-</a>
-<br><br>
+
+### **WEAPONS**
+
+<table>
+<tr>
+  <td align="center" width="140">
+    <img src="https://skillicons.dev/icons?i=java" width="48" height="48" alt="Java" />
+    <br><strong>Java</strong>
+    <br><sub>Primary Language</sub>
+  </td>
+  <td align="center" width="140">
+    <img src="https://skillicons.dev/icons?i=spring" width="48" height="48" alt="Spring Boot" />
+    <br><strong>Spring Boot</strong>
+    <br><sub>Framework</sub>
+  </td>
+  <td align="center" width="140">
+    <img src="https://skillicons.dev/icons?i=kafka" width="48" height="48" alt="Kafka" />
+    <br><strong>Kafka</strong>
+    <br><sub>Event Streaming</sub>
+  </td>
+  <td align="center" width="140">
+    <img src="https://skillicons.dev/icons?i=postgres" width="48" height="48" alt="PostgreSQL" />
+    <br><strong>PostgreSQL</strong>
+    <br><sub>Relational DB</sub>
+  </td>
+  <td align="center" width="140">
+    <img src="https://skillicons.dev/icons?i=redis" width="48" height="48" alt="Redis" />
+    <br><strong>Redis</strong>
+    <br><sub>Caching Layer</sub>
+  </td>
+</tr>
+<tr>
+  <td align="center" width="140">
+    <img src="https://skillicons.dev/icons?i=mongodb" width="48" height="48" alt="MongoDB" />
+    <br><strong>MongoDB</strong>
+    <br><sub>NoSQL DB</sub>
+  </td>
+  <td align="center" width="140">
+    <img src="https://skillicons.dev/icons?i=docker" width="48" height="48" alt="Docker" />
+    <br><strong>Docker</strong>
+    <br><sub>Containerization</sub>
+  </td>
+  <td align="center" width="140">
+    <img src="https://skillicons.dev/icons?i=kubernetes" width="48" height="48" alt="Kubernetes" />
+    <br><strong>Kubernetes</strong>
+    <br><sub>Orchestration</sub>
+  </td>
+  <td align="center" width="140">
+    <img src="https://skillicons.dev/icons?i=aws" width="48" height="48" alt="AWS" />
+    <br><strong>AWS</strong>
+    <br><sub>Cloud Platform</sub>
+  </td>
+  <td align="center" width="140">
+    <img src="https://skillicons.dev/icons?i=git" width="48" height="48" alt="Git" />
+    <br><strong>Git</strong>
+    <br><sub>Version Control</sub>
+  </td>
+</tr>
+</table>
+
+### **HAX**
+
+<img src="https://skillicons.dev/icons?i=python,typescript,javascript,react,nextjs,nodejs,graphql,elasticsearch,prometheus,grafana&theme=dark" />
+
