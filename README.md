@@ -7,7 +7,7 @@
 
 <br>
 
----
+<br>
 
 <!-- Social Badges with Hover Effects -->
 <p align="center">
