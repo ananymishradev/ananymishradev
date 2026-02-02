@@ -14,43 +14,6 @@
 </p>
 
 </div>
-
-<div align="center">
-
-### Systems & Infra
-
-<table>
-<tr>
-  <td align="center" width="140">
-    <img src="https://skillicons.dev/icons?i=python" width="44" />
-    <br><strong>Python</strong>
-    <br><sub>AI Systems</sub>
-  </td>
-  <td align="center" width="140">
-    <img src="https://skillicons.dev/icons?i=docker" width="44" />
-    <br><strong>Docker</strong>
-    <br><sub>Containers</sub>
-  </td>
-  <td align="center" width="140">
-    <img src="https://skillicons.dev/icons?i=kubernetes" width="44" />
-    <br><strong>Kubernetes</strong>
-    <br><sub>Orchestration</sub>
-  </td>
-  <td align="center" width="140">
-    <img src="https://skillicons.dev/icons?i=aws" width="44" />
-    <br><strong>AWS</strong>
-    <br><sub>Cloud</sub>
-  </td>
-  <td align="center" width="140">
-    <img src="https://skillicons.dev/icons?i=linux" width="44" />
-    <br><strong>Linux</strong>
-    <br><sub>Runtime</sub>
-  </td>
-</tr>
-</table>
-
-### Data, Retrieval & Observability
-
 <img src="https://skillicons.dev/icons?i=postgres,redis,elasticsearch,prometheus,grafana&theme=dark" />
 
 </div>
