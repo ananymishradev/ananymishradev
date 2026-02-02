@@ -12,13 +12,4 @@
     <img src="https://img.shields.io/badge/Portfolio-ananymishra.tech-111111?style=for-the-badge&logo=vercel&logoColor=white" />
   </a>
 </p>
-
 </div>
-<img src="https://skillicons.dev/icons?i=postgres,redis,elasticsearch,prometheus,grafana&theme=dark" />
-
-</div>
-
-## Get in Touch
-
-If you’re building something thoughtful in AI systems or infrastructure,  
-I’m always open to conversations and collaboration.
