@@ -15,28 +15,6 @@
 
 </div>
 
----
-
-## What I Do
-
-I work on **AI systems that run in production** — not just models.  
-My focus is on **model serving, retrieval systems, inference performance, and cost-aware infrastructure**.  
-I care deeply about how AI behaves under real load, real constraints, and real users.
-
----
-
-## Core Focus Areas
-
-- Model serving & inference at scale (batching, GPUs, latency)
-- Retrieval systems (RAG, vector search, evaluation)
-- Infrastructure & deployment (Docker, Kubernetes, cloud)
-- Performance tuning & cost optimization
-- Clean system design over quick demos
-
----
-
-## Tech Stack
-
 <div align="center">
 
 ### Systems & Infra
@@ -76,11 +54,6 @@ I care deeply about how AI behaves under real load, real constraints, and real u
 <img src="https://skillicons.dev/icons?i=postgres,redis,elasticsearch,prometheus,grafana&theme=dark" />
 
 </div>
-
----
-
-
----
 
 ## Get in Touch
 
